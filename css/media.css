@@ -20,9 +20,12 @@
     .header {
         font-size: 14px;
         padding: 8px 0;
+        position: fixed;
+        background: #f8f9f6;
     }
     .header__wrapper {
         padding: 0 15px;
+        gap: 15px;
     }
     .logo-wrap {
         gap: 15px;
@@ -42,11 +45,31 @@
         width: 155px;
     }
     .header__wrapper .logo-descr,
-    .header__wrapper .phone-main,
     .header__wrapper .header__mail,
     .header__wrapper .header__location,
     .header__wrapper .menu {
         display: none;
+    }
+    .phone-main {
+        padding: 8px;
+        gap: 16px;
+        padding-left: 16px;
+        border-radius: 60px;
+    }
+    .phone-main i {
+        width: 36px;
+        height: 36px;
+        font-size: 11px;
+    }
+    .header__wrapper .logo-wrap {
+        margin-right: auto;
+    }
+    .header__wrapper .phone-main {
+        padding: 0;
+        background: transparent;
+        border-radius: 50%;
+        font-size: 0;
+        gap: 0;
     }
     .btn-menu {
         padding: 6px 14px;
