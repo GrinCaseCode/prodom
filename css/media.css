@@ -152,6 +152,7 @@
         padding: 0 22px;
         font-size: 14px;
         border-radius: 55px;
+        line-height: 120%;
     }
     .btn-main::before {
         width: 300px;
@@ -164,7 +165,9 @@
         padding: 8px 22px;
         border-radius: 100px;
         font-size: 20px;
-        display: inline-block;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
         position: relative;
         top: 0;
         right: 0;
@@ -827,6 +830,16 @@
     .flipper.active .flipper__wrapper {
         transform: rotateY(180deg);
     }
+    .hidden-mobile {
+        display: none !important;
+    }
+    .portfolio__main .btn-more {
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 16px;
+        display: flex;
+    }
 }
 
 
@@ -839,21 +852,13 @@
     .footer__content {
         display: block !important;
     }
+    .show-mobile,
     .billbord__mobile-image,
     .footer__title i {
         display: none !important;
     }
     .flipper:hover .flipper__wrapper {
         transform: rotateY(180deg);
-    }
-}
-
-
-/*hovers*/
-@media (hover: hover) {
-    .btn-main:hover::before {
-        opacity: 1;
-        transform: rotate(0deg) translateX(0);
     }
     .item-service:hover .item-service__image {
         opacity: 0;
@@ -863,6 +868,15 @@
     }
     .item-service:hover .item-service__list a {
         background: #fff;
+    }
+}
+
+
+/*hovers*/
+@media (hover: hover) {
+    .btn-main:hover::before {
+        opacity: 1;
+        transform: rotate(0deg) translateX(0);
     }
     .swiper-pagination-bullet:hover,
     .slick-dots li button:hover {
@@ -933,15 +947,6 @@
     .btn-main:active::before {
         opacity: 1;
         transform: rotate(0deg) translateX(0);
-    }
-    .item-service:active .item-service__image {
-        opacity: 0;
-    }
-    .item-service:active .item-service__background {
-        opacity: 1;
-    }
-    .item-service:active .item-service__list a {
-        background: #fff;
     }
     .swiper-pagination-bullet:active,
     .slick-dots li button:active {
