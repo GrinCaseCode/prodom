@@ -124,6 +124,7 @@
         }
     }
     .billbord__descr {
+        max-width: 380px;
         top: 0;
         left: 0;
         max-width: initial;
@@ -304,7 +305,7 @@
         border-radius: 24px;
     }
     .item-service__image img {
-        object-position: left;
+        object-position: left top;
     }
     .item-service__title {
         font-size: 16px;
@@ -426,6 +427,9 @@
         margin-top: 15px;
     }
     .item-form {
+        margin-bottom: 15px;
+    }
+    .file-upload {
         margin-bottom: 15px;
     }
     .file-upload label, .item-form input, .item-form textarea {
@@ -635,7 +639,7 @@
         width: 40px;
     }
     .consultation__form .btn-main {
-        margin-top: 15px;
+        margin-top: 8px;
     }
     .footer__column {
         margin: 0 !important;
@@ -836,9 +840,12 @@
     .portfolio__main .btn-more {
         width: fit-content;
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 40px;
         padding: 16px;
         display: flex;
+    }
+    .portfolio__head .title-section {
+        max-width: 340px;
     }
 }
 
