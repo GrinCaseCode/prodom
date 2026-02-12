@@ -923,6 +923,9 @@
     .footer__links a:hover {
         border-color: transparent;
     }
+    .radio-socials__item:hover img {
+        opacity: 0.8;
+    }
 }
 
 /*mobile hovers*/
@@ -998,5 +1001,8 @@
     }
     .footer__links a:active {
         border-color: transparent;
+    }
+    .radio-socials__item:active img {
+        opacity: 0.8;
     }
 }
