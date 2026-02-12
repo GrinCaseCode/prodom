@@ -1590,6 +1590,7 @@ body {
 	position: relative;
 	transition: transform 0.5s ease;
 	transform-style: preserve-3d;
+	display: block;
 }
 .flipper__item {
 	position: absolute;

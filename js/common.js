@@ -196,11 +196,6 @@ $(document).ready(function () {
 		$(selectTab).fadeIn(200);
 	});
 
-	$('.flipper').click(function () {
-		$(this).toggleClass('active');
-		$(".flipper__text").fadeToggle(200);
-	});
-
 
 	/*input file*/
 	$("input[type='file']").change(function () {
@@ -209,13 +204,20 @@ $(document).ready(function () {
 		filename_text.html(filename);
 	});
 
-	//footer
 	{
 		if ($(window).width() < 992) {
+			//footer
 			$(".footer__title").click(function () {
 				$(this).toggleClass("active");
 				$(this).next(".footer__content").slideToggle(200);
 			});
+
+			//flipper
+			$('.flipper').click(function () {
+				$(this).toggleClass('active');
+				$(".flipper__text").fadeToggle(200);
+			});
+
 		}
 	}
 
