@@ -531,6 +531,7 @@
     }
     .item-accordion {
         padding: 15px 0;
+        top: 68px;
     }
     .swiper-accordions {
         padding-bottom: 20px;
@@ -658,6 +659,10 @@
     .footer__nav li ul li {
         margin-bottom: 8px;
         font-size: 14px;
+    }
+    .footer__nav li ul ul li {
+        font-size: 12px;
+        margin-bottom: 4px;
     }
     .footer__nav li ul {
         margin-top: 10px;
@@ -823,7 +828,8 @@
     }
     .flipper__text {
         padding: 12px;
-        height: 252px;
+        width: 217px;
+        height: auto;
         font-size: 11px;
         border-radius: 14px;
         visibility: visible;
@@ -847,6 +853,27 @@
     .portfolio__head .title-section {
         max-width: 340px;
     }
+    .btn-up {
+    width: 40px;
+    height: 40px;
+    bottom: 12px;
+    right: 10px;
+    }
+    .wrapper {
+        overflow: initial;
+    }
+    .consultation--page .consultation__content {
+    max-width: 100%;
+    }
+    .consultation--page .consultation__form .text-small {
+    margin-bottom: 18px;
+}
+.consultation--page .radio-socials {
+    margin-bottom: 20px;
+}
+.consultation--page .item-form {
+    margin-bottom: 15px;
+}
 }
 
 
@@ -947,6 +974,9 @@
     .radio-socials__item:hover img {
         opacity: 0.8;
     }
+    .btn-up:hover {
+        background: #72B01D;
+    }
 }
 
 /*mobile hovers*/
@@ -1016,5 +1046,8 @@
     }
     .radio-socials__item:active img {
         opacity: 0.8;
+    }
+    .btn-up:active {
+        background: #72B01D;
     }
 }

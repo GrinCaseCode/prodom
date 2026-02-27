@@ -14,7 +14,7 @@
 	color: #454955;
 	opacity: 1;
 }
-
+ 
 body {
 	font-family: 'Geometria';
 	font-size: 20px;
@@ -560,8 +560,9 @@ body {
 	display: block;
 }
 .slick-arrow {
-	width: 2.5vw;
-	height: 2.5vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    font-size: 1.7vw;
 	border-radius: 50%;
 	color: #3F7D20;
 	top: 50%;
@@ -577,10 +578,10 @@ body {
 	justify-content: center;
 }
 .slick-prev {
-	left: -3.125vw;
+	left: -3.7vw;
 }
 .slick-next {
-	right: -3.125vw;
+	right: -3.7vw;
 }
 .tab-container {
 	padding-top: 2.6042vw;
@@ -624,7 +625,7 @@ body {
 	height: 100%;
 	z-index: -1;
 	border-radius: 1.25vw;
-	transition: all 1s;
+	transition: all 2s;
 }
 .item-service__background img,
 .item-service__image img {
@@ -1008,7 +1009,6 @@ body {
 	box-sizing: border-box;
 }
 .advantages {
-	padding: 2.5521vw 0;
 	border-radius: 1.25vw;
 	margin: 0 0.8333vw;
 	background: linear-gradient(248.39deg, rgba(114, 176, 29, 0) 86.77%, rgba(114, 176, 29, 0.05) 111.35%), linear-gradient(75.47deg, rgba(114, 176, 29, 0) 66.45%, rgba(114, 176, 29, 0.05) 121.63%), #F8F9F6;
@@ -1161,27 +1161,30 @@ body {
 }
 
 .consultation--page .consultation__main {
-	padding-top: 2.4479vw;
-	background-image: url(../img/bg_consultation2.svg);
+	padding-top: 6.4479vw;
+	    min-height: 40.875vw;
+	background-image: url(../img/bg_consultation2_1.svg);
 	position: relative;
 	z-index: 1;
+	overflow: hidden;
 }
 .consultation--page .title-section {
 	margin-top: 0.6771vw;
 	margin-bottom: 2.5vw;
 }
 .consultation--page .consultation__content {
+	    max-width: 26vw;
 	margin-right: -1.5625vw;
-	max-width: initial;
 }
 .consultation__picture {
-	margin-left: -1.25vw;
-	margin-top: 0.6771vw;
-	position: relative;
-	z-index: -1;
+    margin-left: -4.8vw;
+    top: 3vw;
+    margin-top: 0;
+    position: relative;
+    z-index: -1;
 }
 .consultation__picture img {
-	width: 43.5938vw;
+	width: 36.8vw;
 }
 .consultation__form .title-middle {
 	margin-bottom: 0.8854vw;
@@ -1265,7 +1268,7 @@ body {
 }
 
 .footer__main {
-	padding-top: 3.125vw;
+	padding-top: 4.125vw;
 	border-radius: 1.25vw;
 	font-size: 0.7292vw;
 	margin: 0.8333vw;
@@ -1289,7 +1292,7 @@ body {
 }
 .footer__title {
 	font-size: 1.25vw;
-	margin-bottom: 0.625vw;
+	margin-bottom: 1.2vw;
 	font-weight: 500;
 	line-height: 140%;
 	color: #72B01D;
@@ -1308,9 +1311,13 @@ body {
 }
 .footer__nav li ul li {
 	font-size: 0.8333vw;
-	margin-bottom: 0.4167vw;
+	margin-bottom: 0.6167vw;
 	line-height: 140%;
 	font-weight: 400;
+}
+.footer__nav li ul ul li {
+	font-size: 0.729vw;
+	margin-bottom: 0.4267vw;
 }
 .footer__nav li ul {
 	margin-top: 0.5208vw;
@@ -1624,21 +1631,23 @@ body {
 }
 .flipper__text {
 	padding: 0.8333vw;
-	height: 15.625vw;
 	font-size: 0.6771vw;
 	border-radius: 0.8333vw;
+	width: 16vw;
 	line-height: 140%;
 	font-weight: 500;
 	background: #72B01D;
-	writing-mode: sideways-lr;
-	margin: 0 auto;
-	margin-top: 0.5208vw;
+	margin-right: 0.5vw;
+	margin-top: 1.3vw;
 	opacity: 0;
 	transform: scale(0.8);
 	visibility: hidden;
 	transition: all 0.5s;
-	transform-origin: 50% 0%;
+	transform-origin: 100% 0%;
 	color: #F8F9F6;
+	position: absolute;
+	right: 100%;
+	top: 0;
 }
 .flipper:hover .flipper__text {
 	visibility: visible;
@@ -1698,4 +1707,44 @@ body {
 }
 .no-scroll {
 	overflow: hidden;
+}
+
+.item-accordion {
+	top: 0;
+	position: sticky;
+}
+.btn-up {
+	width: 3vw;
+	height: 3vw;
+	position: fixed;
+	bottom: 1.2vw;
+	right: 1.2vw;
+	background: #3F7D20;
+	color: #fff;
+	border-radius: 50%;
+	z-index: 200;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.fp-viewing-0 .btn-up {
+	visibility: hidden;
+	opacity: 0;
+}
+.consultation--page .consultation__form .text-small {
+    margin-bottom: 2.25vw;
+}
+.consultation--page .radio-socials {
+    margin-bottom: 2.25vw;
+}
+.consultation--page .item-form {
+    margin-bottom: 1vw;
+}
+.consultation--page .consultation__form .btn-main {
+    margin-top: 1.2vw;
+}
+.consultation--page {
+	padding: 0;
 }
