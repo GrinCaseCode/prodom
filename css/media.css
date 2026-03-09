@@ -874,6 +874,9 @@
 .consultation--page .item-form {
     margin-bottom: 15px;
 }
+.section .fp-overflow {
+    padding-top: 0;
+}
 }
 
 
