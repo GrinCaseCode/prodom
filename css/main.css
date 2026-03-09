@@ -14,7 +14,7 @@
 	color: #454955;
 	opacity: 1;
 }
- 
+
 body {
 	font-family: 'Geometria';
 	font-size: 20px;
@@ -560,9 +560,9 @@ body {
 	display: block;
 }
 .slick-arrow {
-    width: 3.5vw;
-    height: 3.5vw;
-    font-size: 1.7vw;
+	width: 3.5vw;
+	height: 3.5vw;
+	font-size: 1.7vw;
 	border-radius: 50%;
 	color: #3F7D20;
 	top: 50%;
@@ -1162,7 +1162,7 @@ body {
 
 .consultation--page .consultation__main {
 	padding-top: 5.4479vw;
-	    min-height: 39.875vw;
+	min-height: 39.875vw;
 	background-image: url(../img/bg_consultation2_1.svg);
 	position: relative;
 	z-index: 1;
@@ -1173,15 +1173,15 @@ body {
 	margin-bottom: 2.5vw;
 }
 .consultation--page .consultation__content {
-	    max-width: 26vw;
+	max-width: 26vw;
 	margin-right: -1.5625vw;
 }
 .consultation__picture {
-    margin-left: -4.8vw;
-    top: 3vw;
-    margin-top: 0;
-    position: relative;
-    z-index: -1;
+	margin-left: -4.8vw;
+	top: 3vw;
+	margin-top: 0;
+	position: relative;
+	z-index: -1;
 }
 .consultation__picture img {
 	width: 36.8vw;
@@ -1734,16 +1734,16 @@ body {
 	opacity: 0;
 }
 .consultation--page .consultation__form .text-small {
-    margin-bottom: 2.25vw;
+	margin-bottom: 2.25vw;
 }
 .consultation--page .radio-socials {
-    margin-bottom: 2.25vw;
+	margin-bottom: 2.25vw;
 }
 .consultation--page .item-form {
-    margin-bottom: 1vw;
+	margin-bottom: 1vw;
 }
 .consultation--page .consultation__form .btn-main {
-    margin-top: 1.2vw;
+	margin-top: 1.2vw;
 }
 .consultation--page {
 	padding: 0;
@@ -1978,7 +1978,7 @@ body {
 .item-accordion.item-accordion--fake {
 	min-height: 23.75vw;
 	opacity: 0;
-}	
+}
 .header {
 	position: fixed;
 }

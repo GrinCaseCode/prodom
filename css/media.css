@@ -854,29 +854,32 @@
         max-width: 340px;
     }
     .btn-up {
-    width: 40px;
-    height: 40px;
-    bottom: 12px;
-    right: 10px;
+        width: 40px;
+        height: 40px;
+        bottom: 12px;
+        right: 10px;
     }
     .wrapper {
         overflow: initial;
     }
     .consultation--page .consultation__content {
-    max-width: 100%;
+        max-width: 100%;
     }
     .consultation--page .consultation__form .text-small {
-    margin-bottom: 18px;
-}
-.consultation--page .radio-socials {
-    margin-bottom: 20px;
-}
-.consultation--page .item-form {
-    margin-bottom: 15px;
-}
-.section .fp-overflow {
-    padding-top: 0;
-}
+        margin-bottom: 18px;
+    }
+    .consultation--page .radio-socials {
+        margin-bottom: 20px;
+    }
+    .consultation--page .item-form {
+        margin-bottom: 15px;
+    }
+    .section .fp-overflow {
+        padding-top: 0;
+    }
+    .item-accordion.item-accordion--fake {
+        display: none;
+    }
 }
 
 
