@@ -17,9 +17,9 @@
 	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="libs/fullPage.js-master/dist/fullpage.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
-	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.5" />
-	<link rel="stylesheet" href="css/media.css?ver=1.5" />
+	<link rel="stylesheet" href="css/fonts.css?ver=1.7" />
+	<link rel="stylesheet" href="css/main.css?ver=1.7" />
+	<link rel="stylesheet" href="css/media.css?ver=1.7" />
 </head>
 <body class="no-scroll">
 
@@ -51,7 +51,7 @@
 					<img src="img/flipper.png" alt="alt">
 				</div>
 			</a>
-			<div class="flipper__text">По всем вопросам можете обращаться к нашему помощнику Бобру Продомувичу</div>
+			<div class="flipper__text">По всем вопросам можете обращаться к нашему помощнику Бобру Продомовичу</div>
 		</div>
 
 		<div class="cursor-circle"></div>
@@ -96,10 +96,26 @@
 					<div class="billbord__main">
 						<h1 class="billbord__title">строительство</h1>
 						<div class="billbord__descr">частных домов и промышленных объектов любой сложности в Крыму «под ключ»</div>
-						<div class="billbord__mobile-image">
-							<img src="img/billbord_mob.png" alt="alt">
+						<div class="slider-billbord">
+							<div>
+								<div class="slider-billbord__item">
+									<picture>
+										<source srcset="img/billbord_mob.png" media="(max-width: 991px)">
+										<img src="img/billbord.png" alt="alt">
+									</picture>
+									<div class="billbord__price">от 45 000 ₽ м²</div>
+								</div>
+							</div>
+							<div>
+								<div class="slider-billbord__item slider-billbord__item--2">
+									<picture>
+										<source srcset="img/billbord_mob2.png" media="(max-width: 991px)">
+										<img src="img/billbord2.png" alt="alt">
+									</picture>
+									<div class="billbord__price">от 65 000 ₽ м²</div>
+								</div>
+							</div>
 						</div>
-						<div class="billbord__price">от 45 000 ₽ м²</div>
 						<div class="billbord__guarantee">Гарантии по договору <br>Без предоплаты за будущие этапы</div>
 						<div class="billbord__buttons">
 							<a href="#" class="btn-main">Рассчитать стоимость</a>
@@ -982,22 +998,32 @@
 				<div class="consultation__main">
 					<div class="container">
 						<div class="consultation__content">
-							<h1 class="title-section">Зафиксируйте <br>выгодные условия работы</h1>
+							<h1 class="title-section">Зафиксируйте выгодные условия работы</h1>
 							<div class="title-small">Оставьте заявку и мы свяжемся с Вами в ближайшее время</div>
 							<div class="consultation__form">
 								<form>
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-4">
 											<div class="item-form">
 												<input type="text" placeholder="Ваше имя" required>
 											</div>
 										</div>
-										<div class="col-md-6">
+										<div class="col-md-4">
 											<div class="item-form">
 												<input type="tel" placeholder="Телефон" class="input-phone" inputmode="numeric" required>
 											</div>
 										</div>
-										<div class="col-md-6">
+										<div class="col-md-4">
+											<div class="item-form">
+												<input type="email" placeholder="Почта" inputmode="email" required>
+											</div>
+										</div>	
+										<div class="col-md-7">
+											<div class="item-form">
+												<input type="text" placeholder="Комментарий" required>
+											</div>
+										</div>
+										<div class="col-md-5">
 											<div class="btn-main">
 												<input type="submit" value="Отправить">
 											</div>
@@ -1124,12 +1150,14 @@
 			<section class="advantages section">
 				<div class="container">
 					<div class="advantages__head">
-						<div class="row align-items-center">
-							<div class="col-lg-6">
-								<h2 class="title-section">Почему с нами выгодно работать?</h2>
-							</div>
-							<div class="col-lg-6">
-								<p>С Вами лично будет работать специалист с более чем 10 летним опытом работы в сфере проектирования и строительства</p>
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-6">
+									<h2 class="title-section">Почему с нами выгодно работать?</h2>
+								</div>
+								<div class="col-lg-6">
+									<p>С Вами лично будет работать специалист с более чем 10 летним опытом работы в сфере проектирования и строительства</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1291,6 +1319,11 @@
 								<div class="consultation__content">
 									<h1 class="title-section">У вас уже есть готовый <br>проект дома?</h1>
 									<div class="title-small">Мы проверим, всё ли правильно сделано в проекте, всё ли учтено, проверим или расчитаем смету и предложим цены на 20% ниже, благодаря собственному производству</div>
+									<ul class="socials-list socials-list--main">
+										<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/wp.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/max.svg" alt="alt"></a></li>
+									</ul>
 								</div>
 							</div>
 							<div class="col-lg-4">
@@ -1303,26 +1336,6 @@
 									<div class="title-middle">Отправьте проект на оценку</div>
 									<div class="text-small">Оставьте свой номер телефона, выберете способ связи, прикрепите файлы проекта</div>
 									<form>
-										<div class="radio-socials">
-											<div class="radio-socials__item">
-												<label>
-													<input type="radio" checked name="socials" />
-													<img src="img/tg.svg" alt="alt">
-												</label>
-											</div>
-											<div class="radio-socials__item">
-												<label>
-													<input type="radio" name="socials" />
-													<img src="img/wp.svg" alt="alt">
-												</label>
-											</div>
-											<div class="radio-socials__item">
-												<label>
-													<input type="radio" name="socials" />
-													<img src="img/max.svg" alt="alt">
-												</label>
-											</div>
-										</div>
 										<div class="row">
 											<div class="col-md-6">
 												<div class="item-form">
@@ -1334,15 +1347,25 @@
 													<input type="tel" placeholder="Телефон" class="input-phone" inputmode="numeric" required>
 												</div>
 											</div>
-											<div class="col-12">
+											<div class="col-md-6">
+												<div class="item-form">
+													<input type="email" placeholder="Почта" inputmode="email" required>
+												</div>
+											</div>
+											<div class="col-md-6">
 												<div class="file-upload">
 													<label><input type="file" name="file"><i class="fal fa-paperclip"></i> Прикрепить проект</label>
 													<div class="name-upload"></div>
 												</div>
 											</div>
 											<div class="col-12">
+												<div class="item-form">
+													<textarea placeholder="Комментарий"></textarea>
+												</div>
+											</div>
+											<div class="col-12">
 												<div class="btn-main">
-													<input type="submit" value="Обсудить проект">
+													<input type="submit" value="Хочу построить дом">
 												</div>
 											</div>
 										</div>
@@ -1384,7 +1407,7 @@
 								<div class="footer__column">
 									<div class="footer__title">Строительство  <i class="far fa-chevron-down"></i></div>
 									<div class="footer__content">
-										<ul class="footer__nav">
+										<ul class="footer__nav footer__nav--tree">
 											<li>
 												<a href="#">Частное</a>
 												<ul>
@@ -1409,14 +1432,14 @@
 															<li><a href="#">Холодные</a></li>
 														</ul>
 													</li>
-												</ul>
-											</li>
-											<li>
-												<a href="#">Сельхоз объекты</a>
-												<ul>
-													<li><a href="#">Ангары</a></li>
-													<li><a href="#">Фермы</a></li>
-													<li><a href="#">Навесы для спец. техники</a></li>
+													<li>
+														<a href="#">Сельхоз объекты</a>
+														<ul>
+															<li><a href="#">Ангары</a></li>
+															<li><a href="#">Фермы</a></li>
+															<li><a href="#">Навесы для спец. техники</a></li>
+														</ul>
+													</li>
 												</ul>
 											</li>
 										</ul>
@@ -1509,7 +1532,7 @@
 	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 	<script src="libs/fullPage.js-master/dist/fullpage.js"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
-	<script src="js/common.js?ver=1.5"></script>
+	<script src="js/common.js?ver=1.7"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
