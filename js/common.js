@@ -18,7 +18,29 @@ $(document).ready(function () {
     $.fn.fullpage.moveTo(1);
 });
 
+//questions
+$(".item-question__head").click(function() {
+    $(this).parent().toggleClass("active");
+    $(this).siblings().slideToggle(200);
+    $(this).parent().siblings(".item-question").removeClass("active");
+    $(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
+  });
+
 	//слайдеры
+
+	$('.slider-billbord').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		  autoplay: true,
+  	autoplaySpeed: 4000,
+		touchThreshold: 1000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-arrow-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-arrow-right"></i><div/>',
+	});
+
 	$('.slider-three').slick({
 		arrows: true,
 		dots: false,
@@ -128,6 +150,35 @@ $(document).ready(function () {
 
 		$slider.slick('slickGoTo', index);
 	});
+
+	var $slider = $('.etaps-wrap');
+
+		function initMobileSlider() {
+			var windowWidth = $(window).width();
+
+			if (windowWidth <= 992) {
+				if (!$slider.hasClass('slick-initialized')) {
+					$slider.slick({
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						dots: true,
+						arrows: false,
+						infinite: true,
+						adaptiveHeight: true
+					});
+				}
+			} else {
+				if ($slider.hasClass('slick-initialized')) {
+					$slider.slick('unslick');
+				}
+			}
+		}
+
+		initMobileSlider();
+
+		$(window).on('resize', function() {
+			initMobileSlider();
+		});
 
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
@@ -259,3 +310,31 @@ function animate() {
 }
 
 animate();
+
+function updateEtaps() {
+    const container = document.querySelector('.etaps-wrap');
+    const items = container.querySelectorAll('.item-etap');
+
+    if (!items.length) return;
+
+    const containerWidth = container.offsetWidth;
+    const itemWidth = items[0].offsetWidth;
+    const count = items.length;
+
+    let shift = 0;
+
+    if (count > 1) {
+        const totalWidth = itemWidth * count;
+
+        if (totalWidth > containerWidth) {
+            shift = (totalWidth - containerWidth) / (count - 1);
+        } else {
+            shift = 0; // не накладываются вообще
+        }
+    }	
+
+container.style.setProperty('--shift', shift + 'px');
+}
+
+updateEtaps();
+window.addEventListener('resize', updateEtaps);
