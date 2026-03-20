@@ -1316,6 +1316,9 @@
     .btn-up:hover {
         background: #72B01D;
     }
+    .unit-card:hover .unit-card__image img {
+        opacity: 0;
+    }
 }
 
 /*mobile hovers*/
@@ -1388,5 +1391,8 @@
     }
     .btn-up:active {
         background: #72B01D;
+    }
+    .unit-card:active .unit-card__image img {
+        opacity: 0;
     }
 }
