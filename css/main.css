@@ -347,9 +347,9 @@ body {
 	z-index: 2;
 }
 .billbord__guarantee {
-	width: 21.4167vw;
-	bottom: 0.8854vw;
-	right: 0.8854vw;
+    width: 21.4167vw;
+    bottom: 1.3vw;
+    right: 1.2vw;
 	padding: 1.25vw 1.5625vw;
 	padding-left: 4.1667vw;
 	border-radius: 3.125vw;
