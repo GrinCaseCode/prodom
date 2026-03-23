@@ -504,7 +504,6 @@ body {
 .tab-pane:first-child {
 	display: block;
 }
-.etaps-wrap:not(.slick-initialized)>*:not(:first-child),
 .slider-marquee:not(.slick-initialized)>*:not(:first-child),
 .item-card__slider:not(.slick-initialized)>*:not(:first-child),
 .slider-two:not(.slick-initialized)>*:not(:first-child),
@@ -2295,7 +2294,7 @@ body {
 }
 
 .consultation--architector .title-section {
-	margin-right: -20.833vw;
+	margin-right: -17.833vw;
 }
 .consultation--architector .title-small {
 	max-width: 21.51vw;
