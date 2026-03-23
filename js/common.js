@@ -18,6 +18,22 @@ $(document).ready(function () {
     $.fn.fullpage.moveTo(1);
 });
 
+
+	//кнопка sandwich
+	$(".btn-menu").click(function () {
+		if ($(".menu-dropdown").is(":hidden")) {
+			$(".menu-dropdown").slideDown(200);
+			$(".btn-menu").addClass("active");
+			$("body").addClass("no-scroll");
+			$(".menu-overlay").fadeIn(200);
+		} else {
+			$(".menu-dropdown").slideUp(200);
+			$(".btn-menu").removeClass("active");
+			$("body").removeClass("no-scroll");
+			$(".menu-overlay").fadeOut(200);
+		}
+	});
+
 //questions
 $(".item-question__head").click(function() {
     $(this).parent().toggleClass("active");
@@ -25,6 +41,14 @@ $(".item-question__head").click(function() {
     $(this).parent().siblings(".item-question").removeClass("active");
     $(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
   });
+
+  //menu
+  $(".navigation li .navigation__haschild > i").click(function() {
+			$(this).parent().siblings().find("ul").slideUp(0);
+			$(this).parent().siblings().removeClass("active");
+			$(this).siblings("ul").slideToggle(200);
+			$(this).parent().toggleClass("active");
+});
 
 	//слайдеры
 
@@ -181,6 +205,39 @@ $(".item-question__head").click(function() {
 			initMobileSlider();
 		});
 
+		$('.slider-for').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		 asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-arrow-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-arrow-right"></i><div/>',
+	});
+
+	$('.slider-nav').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		  asNavFor: '.slider-for',
+		    focusOnSelect: true,
+		touchThreshold: 1000,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-arrow-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-arrow-right"></i><div/>',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+				}
+			}
+		]
+	});
+
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
@@ -194,6 +251,15 @@ $(".item-question__head").click(function() {
 		$(this).parents("section").find(".tab-pane").find(".slider-two").slick('setPosition');
 		$(this).parents("section").find(".tab-pane").find(".slider-three").slick('setPosition');
 		$(this).parents("section").find(".tab-pane").find(".item-card__slider").slick('setPosition');
+	});
+
+	$('.tabs-page li a').click(function (event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(this).parents("section").find(".tab-pane-page").fadeOut(0);
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn(200);
 	});
 
 	{
