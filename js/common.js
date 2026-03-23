@@ -33,6 +33,7 @@ $(".item-question__head").click(function() {
 		dots: false,
 		infinite: true,
 		  autoplay: true,
+		  fade: true,
   	autoplaySpeed: 4000,
 		touchThreshold: 1000,
 		slidesToShow: 1,
@@ -313,6 +314,9 @@ animate();
 
 function updateEtaps() {
     const container = document.querySelector('.etaps-wrap');
+    
+    if (!container) return; 
+
     const items = container.querySelectorAll('.item-etap');
 
     if (!items.length) return;
@@ -325,15 +329,12 @@ function updateEtaps() {
 
     if (count > 1) {
         const totalWidth = itemWidth * count;
-
         if (totalWidth > containerWidth) {
             shift = (totalWidth - containerWidth) / (count - 1);
-        } else {
-            shift = 0; // не накладываются вообще
         }
-    }	
+    }   
 
-container.style.setProperty('--shift', shift + 'px');
+    container.style.setProperty('--shift', shift + 'px');
 }
 
 updateEtaps();

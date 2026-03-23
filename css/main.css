@@ -330,7 +330,7 @@ body {
 .billbord__descr {
 	top: 8.3333vw;
 	left: 1.6146vw;
-	max-width: 22.9167vw;
+	max-width: 21.9167vw;
 	position: absolute;
 }
 .billbord__price {
@@ -347,7 +347,7 @@ body {
 	z-index: 2;
 }
 .billbord__guarantee {
-	width: 20.4167vw;
+	width: 21.4167vw;
 	bottom: 0.8854vw;
 	right: 0.8854vw;
 	padding: 1.25vw 1.5625vw;
@@ -453,7 +453,7 @@ body {
 	align-items: center;
 }
 .btn-more {
-	width: 14.0625vw;
+	width: 15.0625vw;
 	height: 6.6146vw;
 	padding: 1.4583vw;
 	font-size: 0.9375vw;
@@ -628,7 +628,7 @@ body {
 }
 .item-service {
 	height: 21.9792vw;
-	padding: 1.9792vw 1.5104vw;
+	padding: 1.9792vw 1.4vw;
 	padding-top: 0;
 	display: flex;
 	flex-direction: column;
@@ -660,7 +660,7 @@ body {
 	opacity: 0;
 }
 .item-service__title {
-	font-size: 1.875vw;
+	font-size: 1.76vw;
 	line-height: 140%;
 	font-weight: 500;
 	color: #0D0A0B;
@@ -975,8 +975,8 @@ body {
 	opacity: 1;
 }
 .consultation__form .checkbox {
-	max-width: 31.25vw;
-	margin-top: 3.6354vw;
+    max-width: 32.25vw;
+    margin-top: 4.6354vw;
 }
 .consultation__image {
 	right: 5.4167vw;
@@ -2600,4 +2600,42 @@ body {
 	padding-top: 0;
 	line-height: 140%;
 	display: none;
+}
+
+.page-card {
+	background: linear-gradient(253.01deg, rgba(114, 176, 29, 0) 18.71%, rgba(114, 176, 29, 0.09) 97.8%), linear-gradient(75.47deg, rgba(114, 176, 29, 0) 66.45%, rgba(114, 176, 29, 0.1) 121.63%), #F8F9F6;
+	border-radius: 0px 0px 48px 48px;
+}
+.billbord-card {
+	min-height: 760px;
+	margin: 0 20px;
+	padding: 7px 10px;
+	border-radius: 28px;
+	background-image: url(../img/billbord_card.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.billbord-card .breadcrumbs {
+	display: inline-flex;
+}
+.page-card .fp-overflow {
+	padding-top: 105px;
+}
+.card-main {
+	padding: 29px 36px;
+	margin-top: -155px;
+	border-radius: 24px;
+	position: relative;
+	z-index: 2;
+	background: #fff;
+}
+.card-main__content {
+	padding: 18px;
+}
+.card-main__title {
+	font-size: 40px;
+line-height: 120%;
+font-weight: 500;
+color: #0D0A0B;
 }
