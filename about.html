@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/fullPage.js-master/dist/fullpage.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="css/fonts.css?ver=1.11" />
+	<link rel="stylesheet" href="css/main.css?ver=1.11" />
+	<link rel="stylesheet" href="css/media.css?ver=1.11" />
+</head>
+<body class="no-scroll">
+
+	<!-- <div class="preloader">
+		<div class="preloader__logo">
+			<img src="img/logo.svg" alt="alt">
+		</div>
+	</div> -->
+	<div class="btn-up"><i class="far fa-arrow-up"></i></div>
+
+	<div class="wrapper">
+
+		<div class="video-widget" data-state="default">
+			<div class="video-widget__container">
+				<video id="video-widget__video" loop="" autoplay="" playsinline="" preload="auto" muted="muted" controlslist="nodownload" disablepictureinpicture="" class="video-widget__video" src="img/8053646953074.mp4">
+					<source src="img/8053646953074.mp4" type="video/mp4">
+				</video>
+				<div class="video-widget__close"></div>
+				<a class="video-widget__button" href="/">Оставить заявку</a>
+			</div>
+		</div>
+
+		<div class="flipper">
+			<a href="#" class="flipper__wrapper">
+				<div class="flipper__item flipper__item--front">
+					<img src="img/logo_flip.svg" alt="alt">
+				</div>
+				<div class="flipper__item flipper__item--back">
+					<img src="img/flipper.png" alt="alt">
+				</div>
+			</a>
+			<div class="flipper__text">По всем вопросам можете обращаться к нашему помощнику Бобру Продомовичу</div>
+		</div>
+
+		<div class="cursor-circle"></div>
+
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="logo-wrap">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="alt">
+					</a>
+					<div class="logo-descr">Строительная компания полного цикла в Крыму</div>
+				</div>
+				<div class="header__location">г. Симферополь, пер. Киевский, 72 <br>Пн-Пт с 09:00 до 18:00</div>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__haschild">
+							<a href="#">Строительство <i class="far fa-chevron-down"></i></a>
+							<ul>
+								<li class="menu__haschild">
+									<a href="#">Частное</a>
+									<i class="far fa-chevron-right"></i>
+									<ul>
+										<li><a href="#">Дом из ракушечника</a></li>
+										<li><a href="#">Дом из газоблока</a></li>
+										<li><a href="#">Дом каркасный деревянный</a></li>
+										<li><a href="#">Дом из бетона</a></li>
+										<li><a href="#">Дом из ЛСТК</a></li>
+									</ul>
+								</li>
+								<li class="menu__haschild">
+									<a href="#">Коммерческое</a>
+									<i class="far fa-chevron-right"></i>
+									<ul>
+										<li><a href="#">Магазины</a></li>
+										<li><a href="#">СТО, автомойки</a></li>
+										<li><a href="#">Офисы</a></li>
+										<li><a href="#">Отели</a></li>
+										<li class="menu__haschild">
+											<a href="#">Склады</a>
+											<i class="far fa-chevron-right"></i>
+											<ul>
+												<li><a href="#">Теплые</a></li>
+												<li><a href="#">Холодные</a></li>
+											</ul>
+										</li>
+										<li class="menu__haschild">
+											<a href="#">Сельхоз объекты</a>
+											<i class="far fa-chevron-right"></i>
+											<ul>
+												<li><a href="#">Ангары</a></li>
+												<li><a href="#">Фермы</a></li>
+												<li><a href="#">Навесы для спец. техники</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__haschild">
+									<a href="#">Реконструкция</a>
+									<i class="far fa-chevron-right"></i>
+									<ul>
+										<li><a href="#">С увеличением площади</a></li>
+										<li><a href="#">С увеличением этажности</a></li>
+										<li><a href="#">Полная реконструкция</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__haschild">
+							<a href="#">Проектирование <i class="far fa-chevron-down"></i></a>
+							<ul>
+								<li><a href="#">Готовые проекты</a></li>
+								<li><a href="#">Проектирование частных домов</a></li>
+								<li><a href="#">Коммерческое проектирование</a></li>
+							</ul>
+						</li>
+						<li class="menu__haschild">
+							<a href="#">Услуги <i class="far fa-chevron-down"></i></a>
+							<ul>
+								<li><a href="#">Благоустройство двора дома</a></li>
+								<li><a href="#">Аренда оборудования</a></li>
+								<li><a href="#">Дизайн-проект</a></li>
+								<li><a href="#">Дизайн-ремонт</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<a href="mailto:pro-dom82@mail.ru" class="header__mail">pro-dom82@mail.ru</a>
+				<a href="tel:+79782070939" class="phone-main">+7 (978) 207-09-39 <i class="fas fa-phone-alt"></i></a>
+				<div class="btn-menu">
+					<div class="btn-menu__icon"></div>
+					<div class="btn-menu__text">
+							<div class="btn-menu__text-inner">
+							<span>меню</span>
+							<span>меню</span>
+							<span>меню</span>
+							<span>меню</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-dropdown">
+				<div class="container">
+					<div class="menu-wrap">
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li class="navigation__haschild">
+									<a href="#">Строительство</a>
+									<ul>
+										<li class="navigation__haschild">
+											<a href="#">Частное</a>
+											<i class="far fa-chevron-down"></i>
+											<ul>
+												<li><a href="#">Дом из ракушечника</a></li>
+												<li><a href="#">Дом из газоблока</a></li>
+												<li><a href="#">Дом каркасный деревянный</a></li>
+												<li><a href="#">Дом из бетона</a></li>
+												<li><a href="#">Дом из ЛСТК</a></li>
+											</ul>
+										</li>
+										<li class="navigation__haschild">
+											<a href="#">Коммерческое</a>
+											<i class="far fa-chevron-down"></i>
+											<ul>
+												<li><a href="#">Магазины</a></li>
+												<li><a href="#">СТО, автомойки</a></li>
+												<li><a href="#">Офисы</a></li>
+												<li><a href="#">Отели</a></li>
+												<li class="navigation__haschild">
+													<a href="#">Склады</a>
+													<i class="far fa-chevron-down"></i>
+													<ul>
+														<li><a href="#">Теплые</a></li>
+														<li><a href="#">Холодные</a></li>
+													</ul>
+												</li>
+												<li class="navigation__haschild">
+													<a href="#">Сельхоз объекты</a>
+													<i class="far fa-chevron-down"></i>
+													<ul>
+														<li><a href="#">Ангары</a></li>
+														<li><a href="#">Фермы</a></li>
+														<li><a href="#">Навесы для спец. техники</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navigation__haschild">
+											<a href="#">Реконструкция</a>
+											<i class="far fa-chevron-down"></i>
+											<ul>
+												<li><a href="#">С увеличением площади</a></li>
+												<li><a href="#">С увеличением этажности</a></li>
+												<li><a href="#">Полная реконструкция</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li class="navigation__haschild">
+									<a href="#">Проектирование</a>
+									<ul>
+										<li><a href="#">Готовые проекты</a></li>
+										<li><a href="#">Проектирование частных домов</a></li>
+										<li><a href="#">Коммерческое проектирование</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li><a href="#">Условия оплаты</a></li>
+								<li><a href="#">Наши работы</a></li>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li class="navigation__haschild">
+									<a href="#">Услуги</a>
+									<ul>
+										<li><a href="#">Благоустройство двора дома</a></li>
+										<li><a href="#">Аренда оборудования</a></li>
+										<li><a href="#">Дизайн-проект</a></li>
+										<li><a href="#">Дизайн-ремонт</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li class="navigation__haschild">
+									<a href="#">О компании</a>
+									<ul>
+										<li><a href="#">Документы</a></li>
+										<li><a href="#">Команда</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="fullpage">		
+
+			<section class="billbord-about section">
+				<div class="billbord-about__main">
+					<div class="container">
+						<div class="billbord-about__content">
+							<ul class="breadcrumbs">
+								<li><a href="#">Главная</a></li>
+								<li>О компании</li>
+							</ul>
+							<h1 class="billbord-about__title">О компании «Про Дом»</h1>
+							<div class="billbord-about__descr">Строительство частных и коммерческих объектов в Крыму</div>
+							<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="billbord-about__video fancybox">
+								<svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2042_3285)"><path d="M31 62C48.1208 62 62 48.1208 62 31C62 13.8792 48.1208 0 31 0C13.8792 0 0 13.8792 0 31C0 48.1208 13.8792 62 31 62Z" fill="#6EA030" /><path d="M40.6245 28.8199L27.597 19.8868C27.0121 19.4614 26.374 19.2487 25.8955 19.2487C24.8852 19.2487 24.3003 20.0463 24.3003 21.3225V40.6244C24.3003 41.9537 24.8852 42.6981 25.8423 42.6981C26.374 42.6981 26.959 42.4854 27.5439 42.06L40.5713 33.1269C41.4221 32.542 41.9006 31.7976 41.9006 30.9468C41.9006 30.0961 41.4752 29.4048 40.6245 28.8199Z" fill="white" /></g><defs><clipPath id="clip0_2042_3285"><rect width="62" height="62" fill="white" /></clipPath></defs></svg>
+							</a>
+						</div>
+						<div class="billbord-about__mobile show-mobile">
+							<img src="img/billbord_about_mob.jpg" alt="alt">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="history section">
+				<div class="slider-marquee">
+					<div>
+						<div class="slider-marquee__item">
+							<div class="title-section">800+ объектов</div>
+							<div class="image-head">
+								<img src="img/marquee1.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider-marquee__item">
+							<div class="title-section">10 000+ квадратных метров</div>
+							<div class="image-head">
+								<img src="img/marquee2.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider-marquee__item">
+							<div class="title-section">10 городов</div>
+							<div class="image-head">
+								<img src="img/marquee3.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider-marquee__item">
+							<div class="title-section">800+ объектов</div>
+							<div class="image-head">
+								<img src="img/marquee1.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider-marquee__item">
+							<div class="title-section">10 000+ квадратных метров</div>
+							<div class="image-head">
+								<img src="img/marquee2.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider-marquee__item">
+							<div class="title-section">10 городов</div>
+							<div class="image-head">
+								<img src="img/marquee3.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider-marquee__item">
+							<div class="title-section">800+ объектов</div>
+							<div class="image-head">
+								<img src="img/marquee1.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider-marquee__item">
+							<div class="title-section">10 000+ квадратных метров</div>
+							<div class="image-head">
+								<img src="img/marquee2.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider-marquee__item">
+							<div class="title-section">10 городов</div>
+							<div class="image-head">
+								<img src="img/marquee3.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider-marquee__item">
+							<div class="title-section">800+ объектов</div>
+							<div class="image-head">
+								<img src="img/marquee1.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider-marquee__item">
+							<div class="title-section">10 000+ квадратных метров</div>
+							<div class="image-head">
+								<img src="img/marquee2.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="slider-marquee__item">
+							<div class="title-section">10 городов</div>
+							<div class="image-head">
+								<img src="img/marquee3.jpg" alt="alt">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="history__content">
+								<h2 class="title-section">Наша история</h2>
+								<p>Но элементы политического процесса являются только методом политического участия и превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Лишь предприниматели в сети интернет призывают нас к новым свершениям, которые, в свою очередь, должны быть преданы социально-демократической анафеме. </p>
+								<p>Внезапно, реплицированные с зарубежных источников, современные исследования, превозмогая сложившуюся непростую экономическую ситуацию, рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
+							</div>
+						</div>
+						<div class="col-lg-6 offset-lg-2">
+							<div class="history__main">
+								<div class="history__image">
+									<img src="img/history.jpg" alt="alt">
+								</div>
+								<div class="item-history item-history--1">
+									<div class="item-history__content">
+										<div class="item-history__image">
+											<img src="img/history1.jpg" alt="alt">
+										</div>
+										<div class="item-history__title">Стиль «Европейский»</div>
+										<p>Лишь предприниматели в сети интернет призывают нас к новым свершениям, которые, в свою очередь, должны быть преданы </p>
+									</div>
+								</div>
+								<div class="item-history item-history--2">
+									<div class="item-history__content">
+										<div class="item-history__image">
+											<img src="img/history2.jpg" alt="alt">
+										</div>
+										<div class="item-history__title">Стиль «Минимализм»</div>
+										<p>Лишь предприниматели в сети интернет призывают нас к новым свершениям, которые, в свою очередь, должны быть преданы </p>
+									</div>
+								</div>
+								<div class="item-history item-history--3">
+									<div class="item-history__content">
+										<div class="item-history__image">
+											<img src="img/history3.jpg" alt="alt">
+										</div>
+										<div class="item-history__title">Стиль «Скандинавский»</div>
+										<p>Лишь предприниматели в сети интернет призывают нас к новым свершениям, которые, в свою очередь, должны быть преданы </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> 
+
+			<section class="timeline section">
+				<div class="timeline__main">
+					<div class="container">
+						<div class="timeline__wrap">
+							<div class="item-timeline">
+								<div class="item-timeline__content">
+									<div class="title-middle">Создание</div>
+									<p>ООО «_______» и ИП Нефедов А.Н., получение аккредитации в Минтруде на оказание услуг по аутсорсингу в области охраны труда</p>
+								</div>
+								<div class="item-timeline__year"><div class="title-middle">2015</div></div>
+							</div>
+							<div class="item-timeline">
+								<div class="item-timeline__content">
+									<div class="title-middle">Расширение</div>
+									<p>Расширение сферы деятельности за пределы Краснодарского края</p>
+								</div>
+								<div class="item-timeline__year"><div class="title-middle">2018</div></div>
+							</div>
+							<div class="item-timeline">
+								<div class="item-timeline__content">
+									<div class="title-middle">Лицензия</div>
+									<p>Получение лицензии ООО «ЦБ «ЭКСПЕРТ» на право осуществления образовательной деятельности</p>
+								</div>
+								<div class="item-timeline__year"><div class="title-middle">2020</div></div>
+							</div>
+							<div class="item-timeline">
+								<div class="item-timeline__content">
+									<div class="title-middle">Открытие ООО</div>
+									<p>Открытие ООО «ИЛ «ЭКСПЕРТ» (лаборатории по проведению СОУТ, ОПР и производственного контроля)</p>
+								</div>
+								<div class="item-timeline__year"><div class="title-middle">2021</div></div>
+							</div>
+							<div class="item-timeline">
+								<div class="item-timeline__content">
+									<div class="title-middle">Аккредитация</div>
+									<p>Получение аккредитации ООО «ЦБ «ЭКСПЕРТ» в Минтруде на право проведения обучения работодателей и работников вопросам охраны труда</p>
+								</div>
+								<div class="item-timeline__year"><div class="title-middle">2020</div></div>
+							</div>
+							<div class="item-timeline">
+								<div class="item-timeline__content">
+									<div class="title-middle">Расширение</div>
+									<p>Расширение сферы деятельности на новые регионы (ЛНР, ДНР, Запорожская и Херсонская области), открытие ООО «ЦОТ «ЭКСПЕРТ-ДОНБАСС» (г. Луганск)</p>
+								</div>
+								<div class="item-timeline__year"><div class="title-middle">2024</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="etaps etaps--about section">
+				<div class="container">
+					<div class="etaps__head">
+						<div class="row">
+							<div class="col-lg-10">
+								<h2 class="title-section">Почему выбрать именно нас?</h2>
+							</div>
+						</div>
+					</div>
+					<div class="etaps-wrap">
+						<div class="item-etap">
+							<div class="item-etap__number">01</div>
+							<div class="item-etap__title">Цены ниже рыночных на 10% за счёт собственного производственного цеха</div>
+							<div class="item-etap__image">
+								<img src="img/etap_about1.jpg" alt="alt">
+							</div>
+							<div class="item-etap__term">Срок - 10 мин</div>
+							<div class="item-etap__text">Благодаря наличию собственного производства и работе профессионалов, наша цена приятно удивит любого заказчика, от строительного холдинга до начинающего предпринимателя.</div>
+						</div>
+						<div class="item-etap">
+							<div class="item-etap__number">02</div>
+							<div class="item-etap__title">Доставка по всему Крыму на собственном транспорте с гарантией целостности</div>
+							<div class="item-etap__image">
+								<img src="img/etap_about2.jpg" alt="alt">
+							</div>
+							<div class="item-etap__term">Срок - 10 мин</div>
+							<div class="item-etap__text">Благодаря наличию собственного производства и работе профессионалов, наша цена приятно удивит любого заказчика, от строительного холдинга до начинающего предпринимателя.</div>
+						</div>
+						<div class="item-etap">
+							<div class="item-etap__number">03</div>
+							<div class="item-etap__title">Высокое качество металлоконструкций за счёт инженерного надзора</div>
+							<div class="item-etap__image">
+								<img src="img/etap_about3.jpg" alt="alt">
+							</div>
+							<div class="item-etap__term">Срок - 10 мин</div>
+							<div class="item-etap__text">Благодаря наличию собственного производства и работе профессионалов, наша цена приятно удивит любого заказчика, от строительного холдинга до начинающего предпринимателя.</div>
+						</div>
+						<div class="item-etap">
+							<div class="item-etap__number">04</div>
+							<div class="item-etap__title">Даём гарантию до 10 лет на все производимые нами металлоконструкции</div>
+							<div class="item-etap__image">
+								<img src="img/etap_about4.jpg" alt="alt">
+							</div>
+							<div class="item-etap__term">Срок - 10 мин</div>
+							<div class="item-etap__text">Благодаря наличию собственного производства и работе профессионалов, наша цена приятно удивит любого заказчика, от строительного холдинга до начинающего предпринимателя.</div>
+						</div>
+					</div>
+				</div>
+			</section> 
+
+			<section class="about-sliders section">
+				<div class="container">
+					<h2 class="title-main">Наши сертификаты и лицензии</h2>
+					<div class="slider-four">
+						<div>
+							<a href="#" class="item-sertficat">
+								<span class="item-sertficat__icon">
+									<img src="img/ic_file.svg" alt="alt">
+								</span>
+								<span class="item-sertficat__title">Лицензия на строительство зданий и сооружений</span>
+								<span class="item-sertficat__text">Строительство,реконструкция объектов капитального строительства</span>
+							</a>
+						</div>
+						<div>
+							<a href="#" class="item-sertficat">
+								<span class="item-sertficat__icon">
+									<img src="img/ic_file.svg" alt="alt">
+								</span>
+								<span class="item-sertficat__title">Лицензия на строительство зданий и сооружений</span>
+								<span class="item-sertficat__text">Строительство,реконструкция объектов капитального строительства</span>
+							</a>
+						</div>
+						<div>
+							<a href="#" class="item-sertficat">
+								<span class="item-sertficat__icon">
+									<img src="img/ic_file.svg" alt="alt">
+								</span>
+								<span class="item-sertficat__title">Лицензия на строительство зданий и сооружений</span>
+								<span class="item-sertficat__text">Строительство,реконструкция объектов капитального строительства</span>
+							</a>
+						</div>
+						<div>
+							<a href="#" class="item-sertficat">
+								<span class="item-sertficat__icon">
+									<img src="img/ic_file.svg" alt="alt">
+								</span>
+								<span class="item-sertficat__title">Лицензия на строительство зданий и сооружений</span>
+								<span class="item-sertficat__text">Строительство,реконструкция объектов капитального строительства</span>
+							</a>
+						</div>
+						<div>
+							<a href="#" class="item-sertficat">
+								<span class="item-sertficat__icon">
+									<img src="img/ic_file.svg" alt="alt">
+								</span>
+								<span class="item-sertficat__title">Лицензия на строительство зданий и сооружений</span>
+								<span class="item-sertficat__text">Строительство,реконструкция объектов капитального строительства</span>
+							</a>
+						</div>
+					</div>
+					<h2 class="title-main">Наши партнеры</h2>
+					<div class="slider-five">
+						<div>
+							<div class="item-partner">
+								<img src="img/partner1.png" alt="alt">
+							</div>
+						</div>
+						<div>
+							<div class="item-partner">
+								<img src="img/partner2.png" alt="alt">
+							</div>
+						</div>
+						<div>
+							<div class="item-partner">
+								<img src="img/partner3.png" alt="alt">
+							</div>
+						</div>
+						<div>
+							<div class="item-partner">
+								<img src="img/partner4.png" alt="alt">
+							</div>
+						</div>
+						<div>
+							<div class="item-partner">
+								<img src="img/partner5.png" alt="alt">
+							</div>
+						</div>
+						<div>
+							<div class="item-partner">
+								<img src="img/partner1.png" alt="alt">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> 
+
+			<section class="reviews section">
+				<div class="container">
+					<h2 class="title-main">Отзывы</h2>
+					<div class="slider-three">
+						<div>
+							<div class="item-review">
+								<div class="item-review__head">
+									<div class="item-review__image">
+										<img src="img/review.png" alt="alt">
+									</div>
+									<div class="item-review__content">
+										<div class="title-small">Смирнов <br>Валентин Александрович</div>
+										<div class="rating rating_4">
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+										</div>
+									</div>
+								</div>
+								<div class="item-review__text">
+									<p>Ясность нашей позиции очевидна: дальнейшее развитие различных форм деятельности не оставляет шанса для вывода текущих активов. Внезапно, предприниматели в сети интернет призывают нас к новым свершениям, которые, в свою очередь, должны быть объективно рассмотрены соответствующими инстанциями.</p>
+								</div>
+								<div class="item-review__bottom">
+									<div class="item-review__date">01.01.2026</div>
+									<a href="#" class="btn-main btn-main--simple">Читать полностью</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="item-review">
+								<div class="item-review__head">
+									<div class="item-review__image">
+										<img src="img/review.png" alt="alt">
+									</div>
+									<div class="item-review__content">
+										<div class="title-small">Смирнов <br>Валентин Александрович</div>
+										<div class="rating rating_4">
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+										</div>
+									</div>
+								</div>
+								<div class="item-review__text">
+									<p>Ясность нашей позиции очевидна: дальнейшее развитие различных форм деятельности не оставляет шанса для вывода текущих активов. Внезапно, предприниматели в сети интернет призывают нас к новым свершениям, которые, в свою очередь, должны быть объективно рассмотрены соответствующими инстанциями.</p>
+								</div>
+								<div class="item-review__bottom">
+									<div class="item-review__date">01.01.2026</div>
+									<a href="#" class="btn-main btn-main--simple">Читать полностью</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="item-review">
+								<div class="item-review__head">
+									<div class="item-review__image">
+										<img src="img/review.png" alt="alt">
+									</div>
+									<div class="item-review__content">
+										<div class="title-small">Смирнов <br>Валентин Александрович</div>
+										<div class="rating rating_4">
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+											<div class="rating__item"><i class="fas fa-star"></i></div>
+										</div>
+									</div>
+								</div>
+								<div class="item-review__text">
+									<p>Ясность нашей позиции очевидна: дальнейшее развитие различных форм деятельности не оставляет шанса для вывода текущих активов. Внезапно, предприниматели в сети интернет призывают нас к новым свершениям, которые, в свою очередь, должны быть объективно рассмотрены соответствующими инстанциями.</p>
+								</div>
+								<div class="item-review__bottom">
+									<div class="item-review__date">01.01.2026</div>
+									<a href="#" class="btn-main btn-main--simple">Читать полностью</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="video-reviews section">
+				<div class="container">
+					<h2 class="title-main">Видео-отзывы</h2>
+					<div class="slider-three">
+						<div>
+							<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="video-review fancybox">
+								<span class="video-review__image">
+									<img src="img/video_review1.jpg" alt="alt">
+									<span class="video-review__btn">
+										<span class="video-review__play fancybox"><i class="fas fa-play"></i></span>
+									</span>
+								</span>
+								<span class="video-review__descr">Ялта, п. Гаспра</span>
+								<span class="video-review__title">Васильев Петр Владимирович</span>
+							</a>
+						</div>
+						<div>
+							<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="video-review fancybox">
+								<span class="video-review__image">
+									<img src="img/video_review1.jpg" alt="alt">
+									<span class="video-review__btn">
+										<span class="video-review__play fancybox"><i class="fas fa-play"></i></span>
+									</span>
+								</span>
+								<span class="video-review__descr">Ялта, п. Гаспра</span>
+								<span class="video-review__title">Васильев Петр Владимирович</span>
+							</a>
+						</div>
+						<div>
+							<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="video-review fancybox">
+								<span class="video-review__image">
+									<img src="img/video_review1.jpg" alt="alt">
+									<span class="video-review__btn">
+										<span class="video-review__play fancybox"><i class="fas fa-play"></i></span>
+									</span>
+								</span>
+								<span class="video-review__descr">Ялта, п. Гаспра</span>
+								<span class="video-review__title">Васильев Петр Владимирович</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer section--end section">
+				<div class="footer__main">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-2">
+								<div class="footer__column">
+									<div class="footer__logo">
+										<a href="#" class="logo">
+											<img src="img/logo2.svg" alt="alt">
+										</a>
+										<div class="logo-descr">Строительная компания полного цикла в Крыму</div>
+									</div>
+									<div class="requisites">
+										<p>Общество с ограниченной ответственностью «Про-Дом»</p>
+										<p>ОГРЮЛ 1259100009222</p>
+										<p>ИНН 9102305978</p>
+										<p>Юридический и фактический адрес: 295014, Республика Крым, г. Симферополь, пер. Киевский, 72</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<div class="footer__column">
+									<div class="footer__title">Строительство  <i class="far fa-chevron-down"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav footer__nav--tree">
+											<li>
+												<a href="#">Частное</a>
+												<ul>
+													<li><a href="#">Дом из ракушечника</a></li>
+													<li><a href="#">Дом из газоблока</a></li>
+													<li><a href="#">Дом каркасный</a></li>
+													<li><a href="#">Дом из бетона</a></li>
+													<li><a href="#">Дом из ЛСТК</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Коммерческое</a>
+												<ul>
+													<li><a href="#">Магазины</a></li>
+													<li><a href="#">СТО, автомойки</a></li>
+													<li><a href="#">Офисы</a></li>
+													<li><a href="#">Отели</a></li>
+													<li>
+														<a href="#">Склады</a>
+														<ul>
+															<li><a href="#">Теплые</a></li>
+															<li><a href="#">Холодные</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#">Сельхоз объекты</a>
+														<ul>
+															<li><a href="#">Ангары</a></li>
+															<li><a href="#">Фермы</a></li>
+															<li><a href="#">Навесы для спец. техники</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2">
+								<div class="footer__column">
+									<div class="footer__title">Реконструкция  <i class="far fa-chevron-down"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">С увеличением площади</a></li>
+											<li><a href="#">С увеличением этажности</a></li>
+											<li><a href="#">Полная реконструкция</a></li>
+										</ul>
+									</div>
+									<div class="footer__title">Проектирование  <i class="far fa-chevron-down"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">Готовые проекты</a></li>
+											<li><a href="#">Проектирование частных домов</a></li>
+											<li><a href="#">Коммерческое проектирование</a></li>
+										</ul>
+									</div>
+									<div class="footer__title">Услуги  <i class="far fa-chevron-down"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">Реконструкция</a></li>
+											<li><a href="#">Дизайн-проект</a></li>
+											<li><a href="#">Дизайн-ремонт</a></li>
+											<li><a href="#">Аренда оборудования</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<div class="footer__column">
+									<ul class="footer__nav footer__nav--main">
+										<li><a href="#">Наши работы</a></li>
+										<li><a href="#">О компании</a></li>
+										<li><a href="#">Блог</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2">
+								<div class="footer__column">
+									<a href="tel:+79782070939" class="footer__phone">+7 (978) 207-09-39</a>
+									<ul class="socials-list">
+										<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/wp.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/max.svg" alt="alt"></a></li>
+									</ul>
+									<ul class="socials-list socials-list--page">
+										<li><a href="#" target="_blank"><img src="img/vk.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/rutube.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/insta.svg" alt="alt"></a></li>
+									</ul>
+									<div class="footer__contact">
+										<p>г. Симферополь, <br>пер. Киевский, 72</p>
+										<p>График работы: <br>Пн-Пт с 09:00 до 18:00</p>
+										<p><a href="mailto:pro-dom82@mail.ru">pro-dom82@mail.ru</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="container">
+							<div class="footer__wrapper">
+								<div class="footer__links">
+									<a href="#">Политика конфиденциальности</a>
+									<a href="#">Согласие на обработку персональных данных</a>
+								</div>
+								<div class="copyright">© Copyright 2026 г.</div>
+								<div class="create">Сделано в <a href="#" target="_blank"><img src="img/sheer.svg" alt="alt"></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+		
+	</div>
+
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/fullPage.js-master/dist/fullpage.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="js/common.js?ver=1.11"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

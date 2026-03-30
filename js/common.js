@@ -18,6 +18,30 @@ $(document).ready(function () {
     $.fn.fullpage.moveTo(1);
 });
 
+//timeline
+if ('IntersectionObserver' in window) {
+        const options = {
+            root: null, 
+            threshold: 0.2 
+        };
+
+        const callback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    $(entry.target).addClass('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(callback, options);
+
+        $('.item-timeline').each(function() {
+            observer.observe(this);
+        });
+    } else {
+        $('.item-timeline').addClass('is-visible');
+    }
 
 	//кнопка sandwich
 	$(".btn-menu").click(function () {
@@ -64,6 +88,48 @@ $(".item-question__head").click(function() {
 		slidesToScroll: 1,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-arrow-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-arrow-right"></i><div/>',
+	});
+
+		$('.slider-five').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		touchThreshold: 1000,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-arrow-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-arrow-right"></i><div/>',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					arrows: false,
+					dots: true,
+				}
+			}
+		]
+	});
+
+	$('.slider-four').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		touchThreshold: 1000,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-arrow-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-arrow-right"></i><div/>',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+					dots: true,
+				}
+			}
+		]
 	});
 
 	$('.slider-three').slick({
