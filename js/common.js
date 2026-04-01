@@ -304,10 +304,24 @@ $(".item-question__head").click(function() {
 		]
 	});
 
+		//switcher tabs
+	$(".switcher").click(function () {
+		$(this).toggleClass("switcher--map");
+		
+		if ($(this).hasClass("switcher--map")) {
+			$(".switcher-tab--list").slideUp(0);
+			$(".switcher-tab--map").slideDown(200);
+		} else {
+			$(".switcher-tab--list").slideDown(200);
+			$(".switcher-tab--map").slideUp(0);
+		}
+		$(this).parents("section").find(".switcher-tab").find(".item-card__slider").slick('setPosition');
+	});
+
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
-	$('.tabs li a').click(function (event) {
+	$('.tabs:not(.tabs--no-tabs) li a').click(function (event) {
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
 		$(this).parent().addClass('active');
