@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/fullPage.js-master/dist/fullpage.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="css/fonts.css?ver=1.13" />
+	<link rel="stylesheet" href="css/main.css?ver=1.13" />
+	<link rel="stylesheet" href="css/media.css?ver=1.13" />
+</head>
+<body class="no-scroll">
+
+	<div class="preloader">
+		<div class="preloader__logo">
+			<img src="img/logo.svg" alt="alt">
+		</div>
+	</div>
+	<div class="btn-up"><i class="far fa-arrow-up"></i></div>
+
+	<div class="wrapper">
+
+		<div class="video-widget" data-state="default">
+			<div class="video-widget__container">
+				<video id="video-widget__video" loop="" autoplay="" playsinline="" preload="auto" muted="muted" controlslist="nodownload" disablepictureinpicture="" class="video-widget__video" src="img/8053646953074.mp4">
+					<source src="img/8053646953074.mp4" type="video/mp4">
+				</video>
+				<div class="video-widget__close"></div>
+				<a class="video-widget__button" href="/">Оставить заявку</a>
+			</div>
+		</div>
+
+		<div class="flipper">
+			<a href="#" class="flipper__wrapper">
+				<div class="flipper__item flipper__item--front">
+					<img src="img/logo_flip.svg" alt="alt">
+				</div>
+				<div class="flipper__item flipper__item--back">
+					<img src="img/flipper.png" alt="alt">
+				</div>
+			</a>
+			<div class="flipper__text">По всем вопросам можете обращаться к нашему помощнику Бобру Продомовичу</div>
+		</div>
+
+		<div class="cursor-circle"></div>
+
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="logo-wrap">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="alt">
+					</a>
+					<div class="logo-descr">Строительная компания полного цикла в Крыму</div>
+				</div>
+				<div class="header__location">г. Симферополь, пер. Киевский, 72 <br>Пн-Пт с 09:00 до 18:00</div>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__haschild">
+							<a href="#">Строительство <i class="far fa-chevron-down"></i></a>
+							<ul>
+								<li class="menu__haschild">
+									<a href="#">Частное</a>
+									<i class="far fa-chevron-right"></i>
+									<ul>
+										<li><a href="#">Дом из ракушечника</a></li>
+										<li><a href="#">Дом из газоблока</a></li>
+										<li><a href="#">Дом каркасный деревянный</a></li>
+										<li><a href="#">Дом из бетона</a></li>
+										<li><a href="#">Дом из ЛСТК</a></li>
+									</ul>
+								</li>
+								<li class="menu__haschild">
+									<a href="#">Коммерческое</a>
+									<i class="far fa-chevron-right"></i>
+									<ul>
+										<li><a href="#">Магазины</a></li>
+										<li><a href="#">СТО, автомойки</a></li>
+										<li><a href="#">Офисы</a></li>
+										<li><a href="#">Отели</a></li>
+										<li class="menu__haschild">
+											<a href="#">Склады</a>
+											<i class="far fa-chevron-right"></i>
+											<ul>
+												<li><a href="#">Теплые</a></li>
+												<li><a href="#">Холодные</a></li>
+											</ul>
+										</li>
+										<li class="menu__haschild">
+											<a href="#">Сельхоз объекты</a>
+											<i class="far fa-chevron-right"></i>
+											<ul>
+												<li><a href="#">Ангары</a></li>
+												<li><a href="#">Фермы</a></li>
+												<li><a href="#">Навесы для спец. техники</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__haschild">
+									<a href="#">Реконструкция</a>
+									<i class="far fa-chevron-right"></i>
+									<ul>
+										<li><a href="#">С увеличением площади</a></li>
+										<li><a href="#">С увеличением этажности</a></li>
+										<li><a href="#">Полная реконструкция</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__haschild">
+							<a href="#">Проектирование <i class="far fa-chevron-down"></i></a>
+							<ul>
+								<li><a href="#">Готовые проекты</a></li>
+								<li><a href="#">Проектирование частных домов</a></li>
+								<li><a href="#">Коммерческое проектирование</a></li>
+							</ul>
+						</li>
+						<li class="menu__haschild">
+							<a href="#">Услуги <i class="far fa-chevron-down"></i></a>
+							<ul>
+								<li><a href="#">Благоустройство двора дома</a></li>
+								<li><a href="#">Аренда оборудования</a></li>
+								<li><a href="#">Дизайн-проект</a></li>
+								<li><a href="#">Дизайн-ремонт</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<a href="mailto:pro-dom82@mail.ru" class="header__mail">pro-dom82@mail.ru</a>
+				<a href="tel:+79782070939" class="phone-main">+7 (978) 207-09-39 <i class="fas fa-phone-alt"></i></a>
+				<div class="btn-menu">
+					<div class="btn-menu__icon"></div>
+					<div class="btn-menu__text">
+							<div class="btn-menu__text-inner">
+							<span>меню</span>
+							<span>меню</span>
+							<span>меню</span>
+							<span>меню</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-dropdown">
+				<div class="container">
+					<div class="menu-wrap">
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li class="navigation__haschild">
+									<a href="#">Строительство</a>
+									<ul>
+										<li class="navigation__haschild">
+											<a href="#">Частное</a>
+											<i class="far fa-chevron-down"></i>
+											<ul>
+												<li><a href="#">Дом из ракушечника</a></li>
+												<li><a href="#">Дом из газоблока</a></li>
+												<li><a href="#">Дом каркасный деревянный</a></li>
+												<li><a href="#">Дом из бетона</a></li>
+												<li><a href="#">Дом из ЛСТК</a></li>
+											</ul>
+										</li>
+										<li class="navigation__haschild">
+											<a href="#">Коммерческое</a>
+											<i class="far fa-chevron-down"></i>
+											<ul>
+												<li><a href="#">Магазины</a></li>
+												<li><a href="#">СТО, автомойки</a></li>
+												<li><a href="#">Офисы</a></li>
+												<li><a href="#">Отели</a></li>
+												<li class="navigation__haschild">
+													<a href="#">Склады</a>
+													<i class="far fa-chevron-down"></i>
+													<ul>
+														<li><a href="#">Теплые</a></li>
+														<li><a href="#">Холодные</a></li>
+													</ul>
+												</li>
+												<li class="navigation__haschild">
+													<a href="#">Сельхоз объекты</a>
+													<i class="far fa-chevron-down"></i>
+													<ul>
+														<li><a href="#">Ангары</a></li>
+														<li><a href="#">Фермы</a></li>
+														<li><a href="#">Навесы для спец. техники</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navigation__haschild">
+											<a href="#">Реконструкция</a>
+											<i class="far fa-chevron-down"></i>
+											<ul>
+												<li><a href="#">С увеличением площади</a></li>
+												<li><a href="#">С увеличением этажности</a></li>
+												<li><a href="#">Полная реконструкция</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li class="navigation__haschild">
+									<a href="#">Проектирование</a>
+									<ul>
+										<li><a href="#">Готовые проекты</a></li>
+										<li><a href="#">Проектирование частных домов</a></li>
+										<li><a href="#">Коммерческое проектирование</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li><a href="#">Условия оплаты</a></li>
+								<li><a href="#">Наши работы</a></li>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li class="navigation__haschild">
+									<a href="#">Услуги</a>
+									<ul>
+										<li><a href="#">Благоустройство двора дома</a></li>
+										<li><a href="#">Аренда оборудования</a></li>
+										<li><a href="#">Дизайн-проект</a></li>
+										<li><a href="#">Дизайн-ремонт</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li class="navigation__haschild">
+									<a href="#">О компании</a>
+									<ul>
+										<li><a href="#">Документы</a></li>
+										<li><a href="#">Команда</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="fullpage">				
+
+			<div class="finished-projects section">
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li><a href="#">Главная</a></li>
+						<li>Готовые проекты</li>
+					</ul>
+				</div>
+				<div class="finished-projects__main">
+					<div class="container">
+						<h1 class="title-main">Готовые проекты</h1>
+						<ul class="tabs no-tabs">
+							<li><a href="#tab_catalog1">Все</a></li>
+							<li><a href="#tab_catalog2">1 этаж</a></li>
+							<li><a href="#tab_catalog3">1 этаж с мансардой</a></li>
+							<li><a href="#tab_catalog1">2 спальни</a></li>
+							<li><a href="#tab_catalog2">2 этажа</a></li>
+							<li><a href="#tab_catalog3">2 этажа + мансарда</a></li>
+							<li><a href="#tab_catalog1">3 спальни</a></li>
+							<li><a href="#tab_catalog2">4 спальни</a></li>
+							<li><a href="#tab_catalog3">Площадь 50-100 м<sup>2</sup></a></li>
+							<li><a href="#tab_catalog1">Площадь 100-130 м<sup>2</sup></a></li>
+							<li><a href="#tab_catalog2">Площадь 130-150 м<sup>2</sup></a></li>
+							<li><a href="#tab_catalog3">Площадь 150-200 м<sup>2</sup></a></li>
+							<li><a href="#tab_catalog1">Площадь 400 м<sup>2</sup></a></li>
+						</ul>
+						<div class="row row--main">
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-card">
+									<span class="item-card__image">
+										<img src="img/catalog1.jpg" alt="alt">
+									</span>
+									<span class="item-card__content">
+										<span class="item-card__title">Стиль «Скандинавский»</span>
+										<span class="features">
+											<span class="features__item"><span>площадь</span> 130 м2</span>
+											<span class="features__item"><span>габариты</span> 9,1х15,6</span>
+											<span class="features__item"><span>этажность</span> 1 эт</span>
+											<span class="features__item"><span>спальни</span> 2</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-card">
+									<span class="item-card__image">
+										<img src="img/catalog2.jpg" alt="alt">
+									</span>
+									<span class="item-card__content">
+										<span class="item-card__title">Стиль «Минимализм»</span>
+										<span class="features">
+											<span class="features__item"><span>площадь</span> 130 м2</span>
+											<span class="features__item"><span>габариты</span> 9,1х15,6</span>
+											<span class="features__item"><span>этажность</span> 1 эт</span>
+											<span class="features__item"><span>спальни</span> 2</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-card">
+									<span class="item-card__image">
+										<img src="img/catalog3.jpg" alt="alt">
+									</span>
+									<span class="item-card__content">
+										<span class="item-card__title">Стиль «Европейский»</span>
+										<span class="features">
+											<span class="features__item"><span>площадь</span> 130 м2</span>
+											<span class="features__item"><span>габариты</span> 9,1х15,6</span>
+											<span class="features__item"><span>этажность</span> 1 эт</span>
+											<span class="features__item"><span>спальни</span> 2</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-card">
+									<span class="item-card__image">
+										<img src="img/catalog2.jpg" alt="alt">
+									</span>
+									<span class="item-card__content">
+										<span class="item-card__title">Стиль «Минимализм»</span>
+										<span class="features">
+											<span class="features__item"><span>площадь</span> 130 м2</span>
+											<span class="features__item"><span>габариты</span> 9,1х15,6</span>
+											<span class="features__item"><span>этажность</span> 1 эт</span>
+											<span class="features__item"><span>спальни</span> 2</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-card">
+									<span class="item-card__image">
+										<img src="img/catalog3.jpg" alt="alt">
+									</span>
+									<span class="item-card__content">
+										<span class="item-card__title">Стиль «Европейский»</span>
+										<span class="features">
+											<span class="features__item"><span>площадь</span> 130 м2</span>
+											<span class="features__item"><span>габариты</span> 9,1х15,6</span>
+											<span class="features__item"><span>этажность</span> 1 эт</span>
+											<span class="features__item"><span>спальни</span> 2</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-card">
+									<span class="item-card__image">
+										<img src="img/catalog1.jpg" alt="alt">
+									</span>
+									<span class="item-card__content">
+										<span class="item-card__title">Стиль «Скандинавский»</span>
+										<span class="features">
+											<span class="features__item"><span>площадь</span> 130 м2</span>
+											<span class="features__item"><span>габариты</span> 9,1х15,6</span>
+											<span class="features__item"><span>этажность</span> 1 эт</span>
+											<span class="features__item"><span>спальни</span> 2</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-card">
+									<span class="item-card__image">
+										<img src="img/catalog1.jpg" alt="alt">
+									</span>
+									<span class="item-card__content">
+										<span class="item-card__title">Стиль «Скандинавский»</span>
+										<span class="features">
+											<span class="features__item"><span>площадь</span> 130 м2</span>
+											<span class="features__item"><span>габариты</span> 9,1х15,6</span>
+											<span class="features__item"><span>этажность</span> 1 эт</span>
+											<span class="features__item"><span>спальни</span> 2</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-card">
+									<span class="item-card__image">
+										<img src="img/catalog2.jpg" alt="alt">
+									</span>
+									<span class="item-card__content">
+										<span class="item-card__title">Стиль «Минимализм»</span>
+										<span class="features">
+											<span class="features__item"><span>площадь</span> 130 м2</span>
+											<span class="features__item"><span>габариты</span> 9,1х15,6</span>
+											<span class="features__item"><span>этажность</span> 1 эт</span>
+											<span class="features__item"><span>спальни</span> 2</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-card">
+									<span class="item-card__image">
+										<img src="img/catalog3.jpg" alt="alt">
+									</span>
+									<span class="item-card__content">
+										<span class="item-card__title">Стиль «Европейский»</span>
+										<span class="features">
+											<span class="features__item"><span>площадь</span> 130 м2</span>
+											<span class="features__item"><span>габариты</span> 9,1х15,6</span>
+											<span class="features__item"><span>этажность</span> 1 эт</span>
+											<span class="features__item"><span>спальни</span> 2</span>
+										</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="pager">
+							<a class="prev page-numbers" href="#"><i class="far fa-arrow-left"></i></a>
+							<span aria-current="page" class="page-numbers current" href="#">1</span> 
+							<a class="page-numbers" href="#">2</a> 
+							<a class="page-numbers" href="#">3</a> 
+							<a class="next page-numbers" href="#"><i class="far fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer section--end section">
+				<div class="footer__main">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-2">
+								<div class="footer__column">
+									<div class="footer__logo">
+										<a href="#" class="logo">
+											<img src="img/logo2.svg" alt="alt">
+										</a>
+										<div class="logo-descr">Строительная компания полного цикла в Крыму</div>
+									</div>
+									<div class="requisites">
+										<p>Общество с ограниченной ответственностью «Про-Дом»</p>
+										<p>ОГРЮЛ 1259100009222</p>
+										<p>ИНН 9102305978</p>
+										<p>Юридический и фактический адрес: 295014, Республика Крым, г. Симферополь, пер. Киевский, 72</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<div class="footer__column">
+									<div class="footer__title">Строительство  <i class="far fa-chevron-down"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav footer__nav--tree">
+											<li>
+												<a href="#">Частное</a>
+												<ul>
+													<li><a href="#">Дом из ракушечника</a></li>
+													<li><a href="#">Дом из газоблока</a></li>
+													<li><a href="#">Дом каркасный</a></li>
+													<li><a href="#">Дом из бетона</a></li>
+													<li><a href="#">Дом из ЛСТК</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Коммерческое</a>
+												<ul>
+													<li><a href="#">Магазины</a></li>
+													<li><a href="#">СТО, автомойки</a></li>
+													<li><a href="#">Офисы</a></li>
+													<li><a href="#">Отели</a></li>
+													<li>
+														<a href="#">Склады</a>
+														<ul>
+															<li><a href="#">Теплые</a></li>
+															<li><a href="#">Холодные</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#">Сельхоз объекты</a>
+														<ul>
+															<li><a href="#">Ангары</a></li>
+															<li><a href="#">Фермы</a></li>
+															<li><a href="#">Навесы для спец. техники</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2">
+								<div class="footer__column">
+									<div class="footer__title">Реконструкция  <i class="far fa-chevron-down"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">С увеличением площади</a></li>
+											<li><a href="#">С увеличением этажности</a></li>
+											<li><a href="#">Полная реконструкция</a></li>
+										</ul>
+									</div>
+									<div class="footer__title">Проектирование  <i class="far fa-chevron-down"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">Готовые проекты</a></li>
+											<li><a href="#">Проектирование частных домов</a></li>
+											<li><a href="#">Коммерческое проектирование</a></li>
+										</ul>
+									</div>
+									<div class="footer__title">Услуги  <i class="far fa-chevron-down"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">Реконструкция</a></li>
+											<li><a href="#">Дизайн-проект</a></li>
+											<li><a href="#">Дизайн-ремонт</a></li>
+											<li><a href="#">Аренда оборудования</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<div class="footer__column">
+									<ul class="footer__nav footer__nav--main">
+										<li><a href="#">Наши работы</a></li>
+										<li><a href="#">О компании</a></li>
+										<li><a href="#">Блог</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2">
+								<div class="footer__column">
+									<a href="tel:+79782070939" class="footer__phone">+7 (978) 207-09-39</a>
+									<ul class="socials-list">
+										<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/wp.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/max.svg" alt="alt"></a></li>
+									</ul>
+									<ul class="socials-list socials-list--page">
+										<li><a href="#" target="_blank"><img src="img/vk.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/rutube.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/insta.svg" alt="alt"></a></li>
+									</ul>
+									<div class="footer__contact">
+										<p>г. Симферополь, <br>пер. Киевский, 72</p>
+										<p>График работы: <br>Пн-Пт с 09:00 до 18:00</p>
+										<p><a href="mailto:pro-dom82@mail.ru">pro-dom82@mail.ru</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="container">
+							<div class="footer__wrapper">
+								<div class="footer__links">
+									<a href="#">Политика конфиденциальности</a>
+									<a href="#">Согласие на обработку персональных данных</a>
+								</div>
+								<div class="copyright">© Copyright 2026 г.</div>
+								<div class="create">Сделано в <a href="#" target="_blank"><img src="img/sheer.svg" alt="alt"></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+		
+	</div>
+
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/fullPage.js-master/dist/fullpage.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="js/common.js?ver=1.13"></script>
+
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
