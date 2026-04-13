@@ -2048,6 +2048,12 @@
     .card-about__item:last-child {
         margin-bottom: 0;
     }
+    .card-contacts .row > div {
+        margin-bottom: 20px;
+    }
+    .card-contacts .row > div:last-child {
+        margin-bottom: 0;
+    }
 }
 
 
