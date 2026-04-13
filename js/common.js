@@ -304,6 +304,17 @@ $(".item-question__head").click(function() {
 		]
 	});
 
+	$('.slider-layouts').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		touchThreshold: 1000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-arrow-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-arrow-right"></i><div/>',
+	});
+
 		//switcher tabs
 	$(".switcher").click(function () {
 		$(this).toggleClass("switcher--map");

@@ -981,6 +981,8 @@
         border-radius: 16px;
         margin-top: 20px;
     }
+    .card-about,
+    .card-portfolio__main,
     .finished-projects__main,
     .team-main,
     .methods-main,
@@ -1717,7 +1719,7 @@
         width: 60px;
         height: 60px;
         font-size: 18px;
-            box-shadow: 0 0 0 10px #fff;
+        box-shadow: 0 0 0 10px #fff;
     }
     .video-review__btn::before {
         top: -22px;
@@ -1876,105 +1878,176 @@
         padding-bottom: 20px;
     }
 
-    
-.item-team {
-	padding: 16px;
-	gap: 24px;
-	font-size: 14px;
-	border-radius: 22px;
-	display: block;
-}
-.item-team__image {
-	height: 340px;
-    max-width: 284px;
-    margin: 0 auto;
-	border-radius: 16px;
-}
-.item-team__image img {
-	border-radius: 16px;
-}
-.item-team .title-small {
-	margin-bottom: 12px;
-    font-size: 19px;
-}
-.item-team__content {
-    padding-top: 15px;
-    display: block;
-}
-.item-team__descr {
-	font-size: 16px;
-	margin-bottom: 15px;
-}
-.item-team ul {
-	padding-left: 20px;
-}
-.item-team ul li {
-	margin-bottom: 12px;
-}
-.item-team .btn-main {
-	height: 52px;
-	padding: 0 24px;
-	font-size: 14px;
-}
 
-.page-portfolio .portfolio__top {
-	margin-bottom: 27px;
-	gap: 0;
-    display: block;
-}
-.pager {
-	height: 38px;
-	margin-top: 35px;
-	gap: 24px;
-}
-.page-numbers {
-	font-size: 14px;
-}
-.prev.page-numbers,
-.next.page-numbers {
-	font-size: 18px;
-	width: 38px;
-	height: 38px;
-}
-.switcher {
-font-size: 14px;
-gap: 20px;
-margin-bottom: 20px;
-}
-.switcher__btn {
-	width: 56px;
-	height: 28px;
-	border-radius: 60px;
-}
-.switcher__circle {
-	width: 28px;
-	height: 28px;
-}
-.switcher--map .switcher__circle {
-	left: 28px;
-}
-.switcher-tab--map #map {
-    margin-left: 0;
-    margin-right: 0;
-}
-.item-location__image {
-    width: 115px;
-    height: 100px;
-}
-.item-location {
-    padding: 8px;
-    gap: 10px;
-    border-radius: 14px;
-    font-size: 10px;
-}
-.item-location__title {
-    font-size: 13px;
-    margin: 4px 0;
-}
-.finished-projects .no-tabs {
-	margin-bottom: 24px;
-}
+    .item-team {
+        padding: 16px;
+        gap: 24px;
+        font-size: 14px;
+        border-radius: 22px;
+        display: block;
+    }
+    .item-team__image {
+        height: 340px;
+        max-width: 284px;
+        margin: 0 auto;
+        border-radius: 16px;
+    }
+    .item-team__image img {
+        border-radius: 16px;
+    }
+    .item-team .title-small {
+        margin-bottom: 12px;
+        font-size: 19px;
+    }
+    .item-team__content {
+        padding-top: 15px;
+        display: block;
+    }
+    .item-team__descr {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .item-team ul {
+        padding-left: 20px;
+    }
+    .item-team ul li {
+        margin-bottom: 12px;
+    }
+    .item-team .btn-main {
+        height: 52px;
+        padding: 0 24px;
+        font-size: 14px;
+    }
 
+    .page-portfolio .portfolio__top {
+        margin-bottom: 27px;
+        gap: 0;
+        display: block;
+    }
+    .pager {
+        height: 38px;
+        margin-top: 35px;
+        gap: 24px;
+    }
+    .page-numbers {
+        font-size: 14px;
+    }
+    .prev.page-numbers,
+    .next.page-numbers {
+        font-size: 18px;
+        width: 38px;
+        height: 38px;
+    }
+    .switcher {
+        font-size: 14px;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .switcher__btn {
+        width: 56px;
+        height: 28px;
+        border-radius: 60px;
+    }
+    .switcher__circle {
+        width: 28px;
+        height: 28px;
+    }
+    .switcher--map .switcher__circle {
+        left: 28px;
+    }
+    .switcher-tab--map #map {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .item-location__image {
+        width: 115px;
+        height: 100px;
+    }
+    .item-location {
+        padding: 8px;
+        gap: 10px;
+        border-radius: 14px;
+        font-size: 10px;
+    }
+    .item-location__title {
+        font-size: 13px;
+        margin: 4px 0;
+    }
+    .finished-projects .no-tabs {
+        margin-bottom: 24px;
+    }
+    .card-portfolio__main .title-section {
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .card-portfolio {
+        padding-top: 60px;
+    }
+    .card-portfolio__content {
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .property__title {
+        font-size: 14px;
+    }
+    .property {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .card-portfolio__content .btn-main {
+        min-width: 240px;
+        margin-top: 20px;
+    }
+    .slider-layouts__item {
+        height: 350px;
+        padding: 30px 40px;
+        border-radius: 22px;
+    }
+    .slider-layouts .slick-prev {
+        left: -10px;
+    }
+    .slider-layouts .slick-next {
+        right: -10px;
+    }
+    .slick-arrow {
+        width: 34px;
+        height: 34px;
+        font-size: 16px;
+    }
+    .card-layouts__title {
+        top: 10px;
+        left: 10px;
+    }
+    .card-layouts {
+        border-radius: 22px;
+        border-width: 1px;
+    }
+    .card-contacts {
+        padding-bottom: 40px;
+    }
+    .card-about__content {
+        padding: 20px 15px;
+        border-radius: 20px;
+        margin: 10px 0 !important;
+    }
+    .card-about__content::before,
+    .card-about__content::after,
+    .card-about__bg {
+        display: none !important;
+    }
+    .card-about__image img {
+        border-radius: 20px;
+    }
+    .card-about__image {
+        margin: 0 !important;
+    }
+    .card-about__item {
+        margin-bottom: 15px;
+    }
+    .card-about__item:last-child {
+        margin-bottom: 0;
+    }
 }
 
 
@@ -2098,16 +2171,16 @@ margin-bottom: 20px;
         background: transparent;
     }
     .item-team__video:hover {
-	transform: scale(1.06);
-}
-.page-numbers:hover {
-	color: #3F7D20;
-}
-.prev.page-numbers:hover,
-.next.page-numbers:hover {
-    background: #3F7D20;
-    color: #fff;
-}
+        transform: scale(1.06);
+    }
+    .page-numbers:hover {
+        color: #3F7D20;
+    }
+    .prev.page-numbers:hover,
+    .next.page-numbers:hover {
+        background: #3F7D20;
+        color: #fff;
+    }
 }
 
 /*mobile hovers*/
@@ -2201,14 +2274,14 @@ margin-bottom: 20px;
         background: transparent;
     }
     .item-team__video:active {
-	transform: scale(1.06);
-}
-.page-numbers:active {
-	color: #3F7D20;
-}
-.prev.page-numbers:active,
-.next.page-numbers:active {
-    background: #3F7D20;
-    color: #fff;
-}
+        transform: scale(1.06);
+    }
+    .page-numbers:active {
+        color: #3F7D20;
+    }
+    .prev.page-numbers:active,
+    .next.page-numbers:active {
+        background: #3F7D20;
+        color: #fff;
+    }
 }
