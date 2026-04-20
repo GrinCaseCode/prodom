@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/fullPage.js-master/dist/fullpage.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="css/fonts.css?ver=1.14" />
+	<link rel="stylesheet" href="css/main.css?ver=1.14" />
+	<link rel="stylesheet" href="css/media.css?ver=1.14" />
+</head>
+<body class="no-scroll">
+
+	<div class="preloader">
+		<div class="preloader__logo">
+			<img src="img/logo.svg" alt="alt">
+		</div>
+	</div>
+	<div class="btn-up"><i class="far fa-arrow-up"></i></div>
+
+	<div class="wrapper">
+
+		<div class="video-widget" data-state="default">
+			<div class="video-widget__container">
+				<video id="video-widget__video" loop="" autoplay="" playsinline="" preload="auto" muted="muted" controlslist="nodownload" disablepictureinpicture="" class="video-widget__video" src="img/8053646953074.mp4">
+					<source src="img/8053646953074.mp4" type="video/mp4">
+				</video>
+				<div class="video-widget__close"></div>
+				<a class="video-widget__button" href="/">Оставить заявку</a>
+			</div>
+		</div>
+
+		<div class="flipper">
+			<a href="#" class="flipper__wrapper">
+				<div class="flipper__item flipper__item--front">
+					<img src="img/logo_flip.svg" alt="alt">
+				</div>
+				<div class="flipper__item flipper__item--back">
+					<img src="img/flipper.png" alt="alt">
+				</div>
+			</a>
+			<div class="flipper__text">По всем вопросам можете обращаться к нашему помощнику Бобру Продомовичу</div>
+		</div>
+
+		<div class="cursor-circle"></div>
+
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="logo-wrap">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="alt">
+					</a>
+					<div class="logo-descr">Строительная компания полного цикла в Крыму</div>
+				</div>
+				<div class="header__location">г. Симферополь, пер. Киевский, 72 <br>Пн-Пт с 09:00 до 18:00</div>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__haschild">
+							<a href="#">Строительство <i class="far fa-chevron-down"></i></a>
+							<ul>
+								<li class="menu__haschild">
+									<a href="#">Частное</a>
+									<i class="far fa-chevron-right"></i>
+									<ul>
+										<li><a href="#">Дом из ракушечника</a></li>
+										<li><a href="#">Дом из газоблока</a></li>
+										<li><a href="#">Дом каркасный деревянный</a></li>
+										<li><a href="#">Дом из бетона</a></li>
+										<li><a href="#">Дом из ЛСТК</a></li>
+									</ul>
+								</li>
+								<li class="menu__haschild">
+									<a href="#">Коммерческое</a>
+									<i class="far fa-chevron-right"></i>
+									<ul>
+										<li><a href="#">Магазины</a></li>
+										<li><a href="#">СТО, автомойки</a></li>
+										<li><a href="#">Офисы</a></li>
+										<li><a href="#">Отели</a></li>
+										<li class="menu__haschild">
+											<a href="#">Склады</a>
+											<i class="far fa-chevron-right"></i>
+											<ul>
+												<li><a href="#">Теплые</a></li>
+												<li><a href="#">Холодные</a></li>
+											</ul>
+										</li>
+										<li class="menu__haschild">
+											<a href="#">Сельхоз объекты</a>
+											<i class="far fa-chevron-right"></i>
+											<ul>
+												<li><a href="#">Ангары</a></li>
+												<li><a href="#">Фермы</a></li>
+												<li><a href="#">Навесы для спец. техники</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__haschild">
+									<a href="#">Реконструкция</a>
+									<i class="far fa-chevron-right"></i>
+									<ul>
+										<li><a href="#">С увеличением площади</a></li>
+										<li><a href="#">С увеличением этажности</a></li>
+										<li><a href="#">Полная реконструкция</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__haschild">
+							<a href="#">Проектирование <i class="far fa-chevron-down"></i></a>
+							<ul>
+								<li><a href="#">Готовые проекты</a></li>
+								<li><a href="#">Проектирование частных домов</a></li>
+								<li><a href="#">Коммерческое проектирование</a></li>
+							</ul>
+						</li>
+						<li class="menu__haschild">
+							<a href="#">Услуги <i class="far fa-chevron-down"></i></a>
+							<ul>
+								<li><a href="#">Благоустройство двора дома</a></li>
+								<li><a href="#">Аренда оборудования</a></li>
+								<li><a href="#">Дизайн-проект</a></li>
+								<li><a href="#">Дизайн-ремонт</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<a href="mailto:pro-dom82@mail.ru" class="header__mail">pro-dom82@mail.ru</a>
+				<a href="tel:+79782070939" class="phone-main">+7 (978) 207-09-39 <i class="fas fa-phone-alt"></i></a>
+				<div class="btn-menu">
+					<div class="btn-menu__icon"></div>
+					<div class="btn-menu__text">
+							<div class="btn-menu__text-inner">
+							<span>меню</span>
+							<span>меню</span>
+							<span>меню</span>
+							<span>меню</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-dropdown">
+				<div class="container">
+					<div class="menu-wrap">
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li class="navigation__haschild">
+									<a href="#">Строительство</a>
+									<ul>
+										<li class="navigation__haschild">
+											<a href="#">Частное</a>
+											<i class="far fa-chevron-down"></i>
+											<ul>
+												<li><a href="#">Дом из ракушечника</a></li>
+												<li><a href="#">Дом из газоблока</a></li>
+												<li><a href="#">Дом каркасный деревянный</a></li>
+												<li><a href="#">Дом из бетона</a></li>
+												<li><a href="#">Дом из ЛСТК</a></li>
+											</ul>
+										</li>
+										<li class="navigation__haschild">
+											<a href="#">Коммерческое</a>
+											<i class="far fa-chevron-down"></i>
+											<ul>
+												<li><a href="#">Магазины</a></li>
+												<li><a href="#">СТО, автомойки</a></li>
+												<li><a href="#">Офисы</a></li>
+												<li><a href="#">Отели</a></li>
+												<li class="navigation__haschild">
+													<a href="#">Склады</a>
+													<i class="far fa-chevron-down"></i>
+													<ul>
+														<li><a href="#">Теплые</a></li>
+														<li><a href="#">Холодные</a></li>
+													</ul>
+												</li>
+												<li class="navigation__haschild">
+													<a href="#">Сельхоз объекты</a>
+													<i class="far fa-chevron-down"></i>
+													<ul>
+														<li><a href="#">Ангары</a></li>
+														<li><a href="#">Фермы</a></li>
+														<li><a href="#">Навесы для спец. техники</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="navigation__haschild">
+											<a href="#">Реконструкция</a>
+											<i class="far fa-chevron-down"></i>
+											<ul>
+												<li><a href="#">С увеличением площади</a></li>
+												<li><a href="#">С увеличением этажности</a></li>
+												<li><a href="#">Полная реконструкция</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li class="navigation__haschild">
+									<a href="#">Проектирование</a>
+									<ul>
+										<li><a href="#">Готовые проекты</a></li>
+										<li><a href="#">Проектирование частных домов</a></li>
+										<li><a href="#">Коммерческое проектирование</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li><a href="#">Условия оплаты</a></li>
+								<li><a href="#">Наши работы</a></li>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li class="navigation__haschild">
+									<a href="#">Услуги</a>
+									<ul>
+										<li><a href="#">Благоустройство двора дома</a></li>
+										<li><a href="#">Аренда оборудования</a></li>
+										<li><a href="#">Дизайн-проект</a></li>
+										<li><a href="#">Дизайн-ремонт</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="unit-menu">
+							<ul class="navigation">
+								<li class="navigation__haschild">
+									<a href="#">О компании</a>
+									<ul>
+										<li><a href="#">Документы</a></li>
+										<li><a href="#">Команда</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="fullpage">				
+
+			<section class="article section">
+				<div class="article__billbord">
+					<div class="article__billbord-image">
+						<img src="img/article_billbord1.jpg" alt="alt">
+					</div>
+					<div class="article__billbord-content">
+						<div class="container">
+							<ul class="breadcrumbs">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Блог</a></li>
+								<li>Как утеплить дом без отдельных пленок паро- и гидроизоляции и остаться в рамках норм</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="article__content">
+								<div class="article__date">6 марта 2026</div>
+								<h1>Как утеплить дом без отдельных пленок паро- и гидроизоляции и остаться в рамках норм</h1>
+								<p><strong>В частном строительстве правильный «пирог» стены или кровли обычно выглядит так: минеральная вата между стойками, отдельная пароизоляция для дома со стороны помещения, снаружи – ветро- и влагозащитная мембрана, далее вентзазор и финишная отделка. Такая схема подробно описана в строительных рекомендациях. </strong></p>
+								<p><strong>Она действительно работает, но при одном обязательном условии: пароизоляционный слой должен быть непрерывным и герметичным по всей площади, а все стыки – надежно соединены.</strong></p>
+								<p>Если пар из помещения свободно проходит в толщу утеплителя и попадает в более холодную зону, внутри конструкции может образоваться влага. Поэтому нормы требуют обеспечить защиту утеплителя от увлажнения и подтвердить это расчетом.</p>
+								<p>Особенность многослойной системы в том, что она включает десятки потенциально уязвимых мест. Это проколы пленки крепежом и неплотные нахлесты, вводы коммуникаций, примыкания и углы. Даже небольшой дефект может нарушить герметичность контура.</p>
+								<p><strong><i>Итак, можно ли собрать конструкцию так, чтобы функцию паро- и влагозащиты обеспечивал сам утеплитель вместе с герметично соединенными швами, без дополнительной пленки?</i></strong></p>
+								<p>Да – если материал и технология позволяют создать непрерывный контур, а узлы выполнены с учетом расчетного влажностного режима и требований монтажа.</p>
+								<img src="img/article1.jpg" alt="alt">
+								<br class="hidden-mobile">
+								<p><strong>В частном строительстве правильный «пирог» стены или кровли обычно выглядит так: минеральная вата между стойками, отдельная пароизоляция для дома со стороны помещения, снаружи – ветро- и влагозащитная мембрана, далее вентзазор и финишная отделка. Такая схема подробно описана в строительных рекомендациях. </strong></p>
+								<p><strong>Она действительно работает, но при одном обязательном условии: пароизоляционный слой должен быть непрерывным и герметичным по всей площади, а все стыки – надежно соединены.</strong></p>
+								<br class="hidden-mobile">
+								<h2>Что разрешают нормы: как правильно утеплить дом</h2>
+								<p>Так можно ли обойтись без отдельной пленки и не нарушить требования?<br>
+								Нормы требуют не пленку как таковую, а чтобы в конструкции была обеспечена функция парозащиты – независимо от того, каким материалом она выполнена. <br>
+								Проще говоря, ограждающая конструкция (стена или крыша) при утепление дома должна:
+								</p>
+								<ul>
+									<li>удерживать тепло – иметь расчетное сопротивление теплопередаче (чтобы дом не остывал и не приходилось постоянно «топить улицу»);</li>
+									<li>не накапливать влагу внутри – чтобы в толще стены или кровли не возникали условия, когда водяной пар превращается в воду и постепенно увлажняет материалы;</li>
+									<li>быть защищенной от увлажнения – за счет правильно организованных слоев и узлов.</li>
+								</ul>
+								<p>Отдельно стоит подчеркнуть кровли. Для крыш требования к парозащите жестче, потому что под кровельным покрытием часто проходит самая холодная зона конструкции. Поэтому нормативная логика прямо сводится к тому, что парозащитный слой должен быть сплошным и герметичным, а стыки – надежно герметизированными. Это защита от типичного сценария, когда теплый влажный воздух из дома уходит в холодную часть кровли, и там выпадает конденсат.</p>
+								<p>Ключевое требование в нормативах – не конкретная пароизоляционная пленка как отдельный материал, а непрерывный и герметичный парозащитный контур в конструкции.</p>
+								<blockquote>
+									<p>Пеноплекс (экструдированный пенополистирол, XPS) – жёсткие влагостойкие плиты с очень низкой паропроницаемостью. Материал почти не впитывает воду и хорошо держит форму, поэтому его часто применяют в зоне цоколя, фундамента и в системах «мокрого» фасада под штукатурку.</p>
+								</blockquote>
+								<h2>Почему «пленочная» схема иногда подводит</h2>
+								<p>Из этого очевидна главная уязвимость классического решения. Оно может быть технически правильным, но слишком зависимым от качества исполнения. Системы с плитными утеплителями в целом рабочие, но критично важно то, насколько плотно уложен утеплитель и насколько герметично выполнена парозащита. <br>В утепление частного дома минватой типовые сбои выглядят так:</p>
+								<ul>
+									<li>плиты подрезали с микрозазорами или уложили неплотно – в щели попадает воздух, и в этих местах появляются локальные «холодные» зоны;</li>
+									<li>где-то порвали или не проклеили стыки пароизоляции – теплый влажный воздух из помещения начинает уходить в более холодные слои конструкции;</li>
+									<li>на стыках, примыканиях и вокруг вводов коммуникаций формируются условия для влагонакопления, а следом – снижение теплоэффективности и риск потемнений/плесени в «слабых» местах.</li>
+								</ul>
+								<p>Поэтому уже после первой-второй зимы многие начинают искать отзывы на запросы вроде «чем лучше утеплить дом снаружи ». Собственникам нужно, чтобы стены не холодили в углах, не темнели откосы и не приходилось возвращаться к утеплению через пару лет</p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="article__news">
+								<a href="#" class="item-news">
+									<span class="item-news__image">
+										<img src="img/news3.jpg" alt="alt">
+									</span>
+									<span class="item-news__content">
+										<span class="item-news__date">6 марта 2026</span>
+										<span class="item-news__title">Панорамные окна в фахверке: красиво, но непрактично?</span>
+									</span>
+								</a>
+								<a href="#" class="item-news">
+									<span class="item-news__image">
+										<img src="img/news2.jpg" alt="alt">
+									</span>
+									<span class="item-news__content">
+										<span class="item-news__date">6 марта 2026</span>
+										<span class="item-news__title">Почему выгодно выбирать строительную компанию с собственным производством?</span>
+									</span>
+								</a>
+								<a href="#" class="item-news">
+									<span class="item-news__image">
+										<img src="img/news3.jpg" alt="alt">
+									</span>
+									<span class="item-news__content">
+										<span class="item-news__date">6 марта 2026</span>
+										<span class="item-news__title">Панорамные окна в фахверке: красиво, но непрактично?</span>
+									</span>
+								</a>
+								<a href="#" class="item-news">
+									<span class="item-news__image">
+										<img src="img/news2.jpg" alt="alt">
+									</span>
+									<span class="item-news__content">
+										<span class="item-news__date">6 марта 2026</span>
+										<span class="item-news__title">Почему выгодно выбирать строительную компанию с собственным производством?</span>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer section--end section">
+				<div class="footer__main">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-2">
+								<div class="footer__column">
+									<div class="footer__logo">
+										<a href="#" class="logo">
+											<img src="img/logo2.svg" alt="alt">
+										</a>
+										<div class="logo-descr">Строительная компания полного цикла в Крыму</div>
+									</div>
+									<div class="requisites">
+										<p>Общество с ограниченной ответственностью «Про-Дом»</p>
+										<p>ОГРЮЛ 1259100009222</p>
+										<p>ИНН 9102305978</p>
+										<p>Юридический и фактический адрес: 295014, Республика Крым, г. Симферополь, пер. Киевский, 72</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<div class="footer__column">
+									<div class="footer__title">Строительство  <i class="far fa-chevron-down"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav footer__nav--tree">
+											<li>
+												<a href="#">Частное</a>
+												<ul>
+													<li><a href="#">Дом из ракушечника</a></li>
+													<li><a href="#">Дом из газоблока</a></li>
+													<li><a href="#">Дом каркасный</a></li>
+													<li><a href="#">Дом из бетона</a></li>
+													<li><a href="#">Дом из ЛСТК</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Коммерческое</a>
+												<ul>
+													<li><a href="#">Магазины</a></li>
+													<li><a href="#">СТО, автомойки</a></li>
+													<li><a href="#">Офисы</a></li>
+													<li><a href="#">Отели</a></li>
+													<li>
+														<a href="#">Склады</a>
+														<ul>
+															<li><a href="#">Теплые</a></li>
+															<li><a href="#">Холодные</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#">Сельхоз объекты</a>
+														<ul>
+															<li><a href="#">Ангары</a></li>
+															<li><a href="#">Фермы</a></li>
+															<li><a href="#">Навесы для спец. техники</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2">
+								<div class="footer__column">
+									<div class="footer__title">Реконструкция  <i class="far fa-chevron-down"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">С увеличением площади</a></li>
+											<li><a href="#">С увеличением этажности</a></li>
+											<li><a href="#">Полная реконструкция</a></li>
+										</ul>
+									</div>
+									<div class="footer__title">Проектирование  <i class="far fa-chevron-down"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">Готовые проекты</a></li>
+											<li><a href="#">Проектирование частных домов</a></li>
+											<li><a href="#">Коммерческое проектирование</a></li>
+										</ul>
+									</div>
+									<div class="footer__title">Услуги  <i class="far fa-chevron-down"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">Реконструкция</a></li>
+											<li><a href="#">Дизайн-проект</a></li>
+											<li><a href="#">Дизайн-ремонт</a></li>
+											<li><a href="#">Аренда оборудования</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<div class="footer__column">
+									<ul class="footer__nav footer__nav--main">
+										<li><a href="#">Наши работы</a></li>
+										<li><a href="#">О компании</a></li>
+										<li><a href="#">Блог</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2">
+								<div class="footer__column">
+									<a href="tel:+79782070939" class="footer__phone">+7 (978) 207-09-39</a>
+									<ul class="socials-list">
+										<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/wp.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/max.svg" alt="alt"></a></li>
+									</ul>
+									<ul class="socials-list socials-list--page">
+										<li><a href="#" target="_blank"><img src="img/vk.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/rutube.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/insta.svg" alt="alt"></a></li>
+									</ul>
+									<div class="footer__contact">
+										<p>г. Симферополь, <br>пер. Киевский, 72</p>
+										<p>График работы: <br>Пн-Пт с 09:00 до 18:00</p>
+										<p><a href="mailto:pro-dom82@mail.ru">pro-dom82@mail.ru</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="container">
+							<div class="footer__wrapper">
+								<div class="footer__links">
+									<a href="#">Политика конфиденциальности</a>
+									<a href="#">Согласие на обработку персональных данных</a>
+								</div>
+								<div class="copyright">© Copyright 2026 г.</div>
+								<div class="create">Сделано в <a href="#" target="_blank"><img src="img/sheer.svg" alt="alt"></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+		
+	</div>
+
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/fullPage.js-master/dist/fullpage.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="js/common.js?ver=1.14"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
