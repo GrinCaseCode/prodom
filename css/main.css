@@ -4299,3 +4299,10 @@ sup {
 	margin-bottom: 0.833vw;
 	border-bottom: 1px #F0F5ED solid;
 }
+.item-service__content {
+	margin-top: auto;
+}
+.consultation .col-md-5 .btn-main,
+.consultation .col-md-7 .item-form textarea {
+	height: 3.542vw;
+}
