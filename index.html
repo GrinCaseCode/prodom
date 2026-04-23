@@ -17,9 +17,9 @@
 	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="libs/fullPage.js-master/dist/fullpage.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
-	<link rel="stylesheet" href="css/fonts.css?ver=1.16" />
-	<link rel="stylesheet" href="css/main.css?ver=1.16" />
-	<link rel="stylesheet" href="css/media.css?ver=1.16" />
+	<link rel="stylesheet" href="css/fonts.css?ver=1.18" />
+	<link rel="stylesheet" href="css/main.css?ver=1.18" />
+	<link rel="stylesheet" href="css/media.css?ver=1.18" />
 </head>
 <body class="no-scroll">
 
@@ -104,18 +104,18 @@
 										<li><a href="#">Дом из ЛСТК</a></li>
 									</ul>
 								</li>
-								<li class="menu__haschild">
+								<li class="menu__haschild active">
 									<a href="#">Коммерческое</a>
 									<i class="far fa-chevron-right"></i>
-									<ul>
+									<ul style="display: block;">
 										<li><a href="#">Магазины</a></li>
 										<li><a href="#">СТО, автомойки</a></li>
 										<li><a href="#">Офисы</a></li>
 										<li><a href="#">Отели</a></li>
-										<li class="menu__haschild">
+										<li class="menu__haschild active">
 											<a href="#">Склады</a>
 											<i class="far fa-chevron-right"></i>
-											<ul>
+											<ul style="display: block;">
 												<li><a href="#">Теплые</a></li>
 												<li><a href="#">Холодные</a></li>
 											</ul>
@@ -195,18 +195,18 @@
 												<li><a href="#">Дом из ЛСТК</a></li>
 											</ul>
 										</li>
-										<li class="navigation__haschild">
+										<li class="navigation__haschild active">
 											<a href="#">Коммерческое</a>
 											<i class="far fa-chevron-down"></i>
-											<ul>
+											<ul style="display: block;">
 												<li><a href="#">Магазины</a></li>
 												<li><a href="#">СТО, автомойки</a></li>
 												<li><a href="#">Офисы</a></li>
 												<li><a href="#">Отели</a></li>
-												<li class="navigation__haschild">
+												<li class="navigation__haschild active">
 													<a href="#">Склады</a>
 													<i class="far fa-chevron-down"></i>
-													<ul>
+													<ul style="display: block;">
 														<li><a href="#">Теплые</a></li>
 														<li><a href="#">Холодные</a></li>
 													</ul>
@@ -314,7 +314,7 @@
 						</div>
 						<div class="billbord__guarantee">Гарантии по договору <br>Без предоплаты за будущие этапы</div>
 						<div class="billbord__buttons">
-							<a href="#" class="btn-main">Рассчитать стоимость</a>
+							<a href="#modal-quiz" class="btn-main fancybox">Рассчитать стоимость</a>
 							<a href="#" class="btn-main btn-main--page">Выбрать готовый проект</a>
 						</div>
 					</div>
@@ -1796,13 +1796,411 @@
 		
 	</div>
 
+	<div id="modal-quiz" class="modal-block">
+		<div class="quiz">
+			<h2 class="title-main">Рассчитайте стоимость строительства</h2>
+			<div class="quiz__container">
+				<div class="quiz__pane">
+					<div class="quiz__head">
+						<div class="quiz__title active current"><span>Этажность и размер</span></div>
+						<div class="quiz__title"><span>Фундамент и кровля</span></div>
+						<div class="quiz__title"><span>Комплектация дома</span></div>
+						<div class="quiz__title"><span>Результаты</span></div>
+					</div>
+					<div class="row row--main">
+						<div class="col-lg-6">
+							<div class="quiz__subtitle">Выберите этажность дома* <div class="hint" data-hint="1 этаж, 2 этажа, или этаж с мансардой (помещение с покатой крышей)"><i class="fas fa-question-circle"></i></div></div>
+							<div class="quiz__elements">
+								<div class="item-quiz">
+									<label>
+										<input type="radio" checked name="quiz1" required />
+										<span class="item-quiz__unit">
+											<span class="item-quiz__image">
+												<img src="img/quiz1_1.jpg" alt="alt">
+											</span>
+											<span class="item-quiz__content">
+												<span class="item-quiz__head">
+													<span class="item-quiz__circle"></span>
+													1 этаж
+												</span>
+											</span>
+										</span>
+									</label>
+								</div>
+								<div class="item-quiz">
+									<label>
+										<input type="radio" name="quiz1" required />
+										<span class="item-quiz__unit">
+											<span class="item-quiz__image">
+												<img src="img/quiz1_2.jpg" alt="alt">
+											</span>
+											<span class="item-quiz__content">
+												<span class="item-quiz__head">
+													<span class="item-quiz__circle"></span>
+													1 этаж с мансардой
+												</span>
+											</span>
+										</span>
+									</label>
+								</div>
+								<div class="item-quiz">
+									<label>
+										<input type="radio" name="quiz1" required />
+										<span class="item-quiz__unit">
+											<span class="item-quiz__image">
+												<img src="img/quiz1_3.jpg" alt="alt">
+											</span>
+											<span class="item-quiz__content">
+												<span class="item-quiz__head">
+													<span class="item-quiz__circle"></span>
+													2 этажа
+												</span>
+											</span>
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="quiz__subtitle">Габариты дома в метрах</div>
+							<div class="quiz__range">
+								<div class="quiz__range-title">
+									Длина (м)
+									<div class="hint" data-hint="Укажите длину и ширину будущего дома для расчета площади"><i class="fas fa-question-circle"></i></div>
+								</div>
+								<input type="range" min="1" max="20" step="0.5" value="1">
+								<div class="quiz__range-bottom">
+									<div class="quiz__range-value">1</div>
+									<input type="number" value="1" step="0.5" data-type="range">
+									<div class="quiz__range-value">20</div>
+								</div>
+							</div>
+							<div class="quiz__range">
+								<div class="quiz__range-title">
+									Ширина (м)
+								</div>
+								<input type="range" min="1" max="20" step="0.5" value="1">
+								<div class="quiz__range-bottom">
+									<div class="quiz__range-value">1</div>
+									<input type="number" value="1" step="0.5" data-type="range">
+									<div class="quiz__range-value">20</div>
+								</div>
+							</div>
+							<div class="quiz__result">Площадь <strong>1.00 </strong> м<sup>2</sup></div>
+						</div>
+					</div>
+					<div class="quiz__buttons">
+						<a href="#" class="btn-main btn-main--page btn-main--back hidden">Назад</a>
+						<a href="#" class="btn-main btn-main--next">Далее</a>
+					</div>
+				</div>
+				<div class="quiz__pane">
+					<div class="quiz__head">
+						<div class="quiz__title active"><span>Этажность и размер</span></div>
+						<div class="quiz__title active current"><span>Фундамент и кровля</span></div>
+						<div class="quiz__title"><span>Комплектация дома</span></div>
+						<div class="quiz__title"><span>Результаты</span></div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="quiz__subtitle">Фундамент дома</div>
+							<div class="quiz__elements">
+								<div class="item-quiz">
+									<label>
+										<input type="radio" name="quiz2" />
+										<span class="item-quiz__unit">
+											<span class="item-quiz__image">
+												<img src="img/quiz2_1.jpg" alt="alt">
+											</span>
+											<span class="item-quiz__content">
+												<span class="item-quiz__head">
+													<span class="item-quiz__circle"></span>
+													Плитный
+												</span>
+											</span>
+										</span>
+									</label>
+								</div>
+								<div class="item-quiz">
+									<label>
+										<input type="radio" name="quiz2" />
+										<span class="item-quiz__unit">
+											<span class="item-quiz__image">
+												<img src="img/quiz2_2.jpg" alt="alt">
+											</span>
+											<span class="item-quiz__content">
+												<span class="item-quiz__head">
+													<span class="item-quiz__circle"></span>
+													Ленточный
+												</span>
+											</span>
+										</span>
+									</label>
+								</div>
+								<div class="item-quiz">
+									<label>
+										<input type="radio" name="quiz2" />
+										<span class="item-quiz__unit">
+											<span class="item-quiz__image">
+												<img src="img/quiz2_3.jpg" alt="alt">
+											</span>
+											<span class="item-quiz__content">
+												<span class="item-quiz__head">
+													<span class="item-quiz__circle"></span>
+													Столбчатый
+												</span>
+											</span>
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="quiz__subtitle">Кровля</div>
+							<div class="quiz__elements">
+								<div class="item-quiz">
+									<label>
+										<input type="radio" name="quiz3" />
+										<span class="item-quiz__unit">
+											<span class="item-quiz__image">
+												<img src="img/quiz3_1.jpg" alt="alt">
+											</span>
+											<span class="item-quiz__content">
+												<span class="item-quiz__head">
+													<span class="item-quiz__circle"></span>
+													Металлочерепица
+												</span>
+											</span>
+										</span>
+									</label>
+								</div>
+								<div class="item-quiz">
+									<label>
+										<input type="radio" name="quiz3" />
+										<span class="item-quiz__unit">
+											<span class="item-quiz__image">
+												<img src="img/quiz3_2.jpg" alt="alt">
+											</span>
+											<span class="item-quiz__content">
+												<span class="item-quiz__head">
+													<span class="item-quiz__circle"></span>
+													Гибкая черепица
+												</span>
+											</span>
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="quiz__buttons">
+						<a href="#" class="btn-main btn-main--page btn-main--back">Назад</a>
+						<a href="#" class="btn-main btn-main--next">Далее</a>
+					</div>
+				</div>
+				<div class="quiz__pane">
+					<div class="quiz__head">
+						<div class="quiz__title active"><span>Этажность и размер</span></div>
+						<div class="quiz__title active"><span>Фундамент и кровля</span></div>
+						<div class="quiz__title active current"><span>Комплектация дома</span></div>
+						<div class="quiz__title"><span>Результаты</span></div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="quiz__subtitle">Комплектация дома</div>
+							<div class="quiz__elements">
+								<div class="item-quiz">
+									<label>
+										<input type="radio" name="quiz4" />
+										<span class="item-quiz__unit">
+											<span class="item-quiz__image">
+												<img src="img/quiz4_1.jpg" alt="alt">
+											</span>
+											<span class="item-quiz__content">
+												<span class="item-quiz__head">
+													<span class="item-quiz__circle"></span>
+													"Теплый контур"
+												</span>
+											</span>
+										</span>
+									</label>
+								</div>
+								<div class="item-quiz">
+									<label>
+										<input type="radio" name="quiz4" />
+										<span class="item-quiz__unit">
+											<span class="item-quiz__image">
+												<img src="img/quiz4_2.jpg" alt="alt">
+											</span>
+											<span class="item-quiz__content">
+												<span class="item-quiz__head">
+													<span class="item-quiz__circle"></span>
+													"Предчистовая отделка"
+												</span>
+											</span>
+										</span>
+									</label>
+								</div>
+								<div class="item-quiz">
+									<label>
+										<input type="radio" name="quiz4" />
+										<span class="item-quiz__unit">
+											<span class="item-quiz__image">
+												<img src="img/quiz4_3.jpg" alt="alt">
+											</span>
+											<span class="item-quiz__content">
+												<span class="item-quiz__head">
+													<span class="item-quiz__circle"></span>
+													"Финиш"
+												</span>
+											</span>
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<a href="#modal-about-complectation" class="btn-main btn-main--simple fancybox"><i class="fas fa-info-circle"></i> Что входит в комплектацию?</a>
+					<br>
+					<br>
+					<div class="quiz__subtitle">Инженерные сети</div>
+					<div class="quiz__elements">
+						<div class="item-check">
+							<label>
+								<input type="checkbox" />
+								<span class="item-check__unit">
+									<span class="item-check__image">
+										<img src="img/img_check1.png" alt="alt">
+									</span>
+									<span class="item-check__icon"><i class="fal fa-check"></i></span>
+									<span class="item-check__title">Электрика</span>
+								</span>
+							</label>
+						</div>
+						<div class="item-check">
+							<label>
+								<input type="checkbox" />
+								<span class="item-check__unit">
+									<span class="item-check__image">
+										<img src="img/img_check2.png" alt="alt">
+									</span>
+									<span class="item-check__icon"><i class="fal fa-check"></i></span>
+									<span class="item-check__title">Отопление</span>
+								</span>
+							</label>
+						</div>
+						<div class="item-check">
+							<label>
+								<input type="checkbox" />
+								<span class="item-check__unit">
+									<span class="item-check__image">
+										<img src="img/img_check3.png" alt="alt">
+									</span>
+									<span class="item-check__icon"><i class="fal fa-check"></i></span>
+									<span class="item-check__title">Вентиляция</span>
+								</span>
+							</label>
+						</div>
+						<div class="item-check">
+							<label>
+								<input type="checkbox" />
+								<span class="item-check__unit">
+									<span class="item-check__image">
+										<img src="img/img_check4.png" alt="alt">
+									</span>
+									<span class="item-check__icon"><i class="fal fa-check"></i></span>
+									<span class="item-check__title">Септик</span>
+								</span>
+							</label>
+						</div>
+					</div>
+					<div class="quiz__buttons">
+						<a href="#" class="btn-main btn-main--page btn-main--back">Назад</a>
+						<a href="#" class="btn-main btn-main--next">Далее</a>
+					</div>
+				</div>
+				<div class="quiz__pane">
+					<div class="quiz__head">
+						<div class="quiz__title active"><span>Этажность и размер</span></div>
+						<div class="quiz__title active"><span>Фундамент и кровля</span></div>
+						<div class="quiz__title active"><span>Комплектация дома</span></div>
+						<div class="quiz__title active current"><span>Результаты</span></div>
+					</div>
+					<div class="quiz__subtitle">Отправьте заявку и получите более подробный индивидуальный расчет </div>
+					<br>
+					<p><small>*Ориентировочная стоимость</small></p>
+					<br>
+					<form>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="item-form item-form--page">
+									<input type="text" placeholder="Ваше имя" required>
+								</div>
+								<div class="item-form item-form--page">
+									<textarea placeholder="Комментарий"></textarea>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="item-form item-form--page">
+									<input type="tel" placeholder="Телефон" class="input-phone" inputmode="numeric" required>
+								</div>
+								<div class="file-upload">
+									<label><input type="file" name="file"><i class="fal fa-paperclip"></i> Прикрепить файл</label>
+									<div class="name-upload"></div>
+								</div>
+								<div class="btn-main btn-main--quiz">
+									<input type="submit" value="Рассчитать проект">
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="quiz__buttons">
+						<a href="#" class="btn-main btn-main--page btn-main--back">Назад</a>
+						<a href="#" class="btn-main btn-main--next hidden">Далее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-about-complectation" class="modal-block">
+		<div class="modal-wrap">
+			<div class="about-complectation__grid">
+				<div class="about-complectation__column">
+					<p><b>"Теплый контур":</b><br>
+					- железобетонный каркас <br>
+					- стены<br>
+					- кровля и утепление<br>
+					- проемы (окна и двери)
+					</p>
+				</div>
+				<div class="about-complectation__column">
+					<p>
+						<b>"Предчистовая отделка":</b><br>
+					- "теплый контур" <br>
+					- инженерные сети <br>
+					- стяжка<br>
+					- штукатурка
+					</p>
+				</div>
+				<div class="about-complectation__column">
+					<p>
+					<b>"Финиш":</b><br>
+					- "предчистовая отделка"<br>
+					- фасад</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
 	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
 	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 	<script src="libs/fullPage.js-master/dist/fullpage.js"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
-	<script src="js/common.js?ver=1.16"></script>
+	<script src="js/common.js?ver=1.18"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

@@ -1,5 +1,49 @@
 $(document).ready(function () {
 
+	/*quiz*/
+
+		$('.quiz .btn-main--next').on('click', function(e) {
+			e.preventDefault();
+			$(this).parents(".quiz__pane").hide();
+			$(this).parents(".quiz__pane").next(".quiz__pane").fadeIn(200);
+});
+
+$('.quiz .btn-main--back').on('click', function(e) {
+			e.preventDefault();
+			$(this).parents(".quiz__pane").hide();
+			$(this).parents(".quiz__pane").prev(".quiz__pane").fadeIn(200);
+});
+
+	$('.quiz__range').each(function() {
+        const $container = $(this);
+        const $range = $container.find('input[type="range"]');
+        const $number = $container.find('input[type="number"]');
+
+        $range.on('input', function() {
+            $number.val($(this).val());
+        });
+
+        $number.on('input', function() {
+            let val = $(this).val();
+            
+            const min = parseFloat($range.attr('min'));
+            const max = parseFloat($range.attr('max'));
+
+            if (val < min) val = min;
+            if (val > max) val = max;
+
+            $range.val(val);
+        });
+    });
+
+	$('.hint').each(function() {
+        const text = $(this).attr('data-hint');
+        
+        if (text) {
+            $(this).append('<div class="custom-tooltip">' + text + '</div>');
+        }
+    });
+
 	setTimeout(function () {
 		$(".preloader").fadeOut(200);
 		$("body").removeClass("no-scroll");
@@ -416,8 +460,12 @@ $('.btn-tab').click(function() {
 		$(selectTab).fadeIn(200);
 	});
 
+	//quiz
 	{
 		if ($(window).width() > 992) {
+			$('.tabs-steps li a').on('click', function(event) {
+			event.preventDefault();
+		});
 			$('.tabs-steps li a').on('mouseenter', function(event) {
 			event.preventDefault();
 			$(this).parent().parent().find("li").removeClass('active');
@@ -478,10 +526,22 @@ $('.btn-tab').click(function() {
 	}
 
 	//Попап менеджер FancyBox
-	$(".fancybox").fancybox({
-		autoFocus: false,
-		backFocus: false,
-	});
+$(".fancybox").fancybox({
+    autoFocus: false,
+    backFocus: false,
+
+    afterShow: function (instance, current) {
+        current.$content.on('wheel.fp touchmove.fp', function (e) {
+            e.stopPropagation();
+        });
+    },
+
+    afterClose: function (instance, current) {
+        if (current && current.$content) {
+            current.$content.off('wheel.fp touchmove.fp');
+        }
+    }
+});
 
 	//fixed video
 	var e = $(".video-widget"),
@@ -566,3 +626,4 @@ function updateEtaps() {
 
 updateEtaps();
 window.addEventListener('resize', updateEtaps);
+
