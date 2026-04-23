@@ -36,12 +36,27 @@ $('.quiz .btn-main--back').on('click', function(e) {
         });
     });
 
-	$('.hint').each(function() {
+    $('.hint').each(function() {
         const text = $(this).attr('data-hint');
-        
-        if (text) {
+        if (text && $(this).find('.custom-tooltip').length === 0) {
             $(this).append('<div class="custom-tooltip">' + text + '</div>');
         }
+    });
+
+    $('.hint').on('click', function(e) {
+        if ($(window).width() < 992) {
+            e.stopPropagation(); 
+            
+            const $tooltip = $(this).find('.custom-tooltip');
+            
+            $('.custom-tooltip').not($tooltip).removeClass('is-active');
+            
+            $tooltip.toggleClass('is-active');
+        }
+    });
+
+    $(document).on('click', function() {
+        $('.custom-tooltip').removeClass('is-active');
     });
 
 	setTimeout(function () {

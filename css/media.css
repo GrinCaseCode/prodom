@@ -2702,11 +2702,6 @@
 .item-quiz__image {
     height: 200px;
 }
-.custom-tooltip {
-    left: auto;
-    right: 100%;
-    transform: none;
-}
 .item-quiz__head {
     font-size: 16px;
 }
@@ -2728,6 +2723,19 @@
 }
 .quiz__subtitle {
     font-size: 123%;
+}
+.hint:hover .custom-tooltip {
+    opacity: 0;
+    visibility: hidden;
+}
+.hint .custom-tooltip.is-active {
+    visibility: visible;
+    opacity: 1;
+}
+.about-complectation__grid {
+    width: 500px;
+    max-width: 100%;
+    display: block;
 }
 }
  
